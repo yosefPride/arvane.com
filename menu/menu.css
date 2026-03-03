@@ -1,0 +1,19 @@
+.product-preview {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+  object-fit: cover; /* scales image properly */
+}
+
+.overlay-text {
+  position: absolute;       /* position relative to container */
+  top: 20%;                 /* center vertically */
+  left: 50%;                /* center horizontally */
+  /*transform: translate(-50%, -50%); /* perfectly center text */
+  color: rgb(235, 231, 16);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}

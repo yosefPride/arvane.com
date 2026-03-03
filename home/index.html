@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvane | Home</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--socials-->
+</head>
+<body>
+    
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="logo" height="80px">
+        </div>
+        <div class="nav-links">
+            <a href="../home/locations.html">Locations</a>
+            <a href="../account/membership.html">Membership</a>
+            <a href="../contactUs.html">Contact Us</a>
+        </div>
+        <div class="nav-CTA">
+            <a href="../joinTeam.html">Join Our Team</a>
+            <button onclick="openForm()">Sign In</button>
+            <div id="popupForm" class="form-popup">
+                <span class="close-btn" onclick="closeForm()">×</span>
+                <form action="SignIn.html" class="form-container">
+
+                    <p>* indicates required field</p>
+                    <label for="username">Username: </label>
+                    <input type="text" id="username" placeholder="* Username" required>
+
+                    <div class="tel">
+                        <label id="phone" for="tel">Phone number: </label>
+                        <input type="tel"pattern="^\05\d{8,9}$" id="tel" placeholder="* 0512345678" required>
+                    </div>
+
+                    <div sign-in-btn>
+                        <button type="submit">Sign In</button>
+                    </div>
+
+                    <br>
+                    <a href="../account/reset-password.html">forgot your password?</a>
+
+                    <p>
+                        Don't have an account? 
+                        <a href="../account/createAccount.html">Create one</a> 
+                    </p>
+                </form>
+
+                <script> //JS for popup form.
+                    function openForm() {
+                    document.getElementById("popupForm").style.display = "flex";
+                    }
+
+                    function closeForm() {
+                    document.getElementById("popupForm").style.display = "none";
+                    }
+                </script>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="hero">
+        <img src="hero-background.jpeg" alt="coffe cup" width="100%">
+        <div class="hero-overlay-text">
+            <h1>Elevate Your Everyday</h1>
+            <p>
+                Step into Arvane and feel the shift. The scent of freshly ground beans. 
+                The soft steam rising from your cup. The quiet rhythm of conversation and focus. 
+                Whether you're starting your morning or settling into deep work, 
+                every visit is crafted to slow time and elevate presence.
+            </p>
+            <a href="../menu/menu.html"><button>View Menu</button></a>
+        </div>
+    </section>
+
+
+    <section class="choose-us">
+        <h2>Why Choose Arvane?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <img src="roasted-beans.jpg" alt="roasted beans">
+                <h3>Freshly Roasted</h3>
+                <p>Beans roasted weekly to guarantee peak freshness and flavor.</p>
+            </div>
+            <div class="feature-box">
+                <img src="chocolate.jpg" alt="chocolate">
+                <h3>Premium Ingredients</h3>
+                <p>High-quality milk, real chocolate, and natural vanilla.</p>
+            </div>
+            <div class="feature-box">
+                <img src="barista.jpg" alt="barista">
+                <h3>Expert Baristas</h3>
+                <p>Skilled professionals trained to craft the perfect cup.</p>
+            </div>
+            <div class="feature-box">
+                <img src="relaxing.jpg" alt=" woman relaxing in cafe">
+                <h3>Relaxing Atmosphere</h3>
+                <p>Designed to help you focus, relax, or meet with friends.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="product-on-sale">
+        
+    </section> -->
+
+
+<!-- 
+    <section class="about">
+        <div class="container">
+            <h2>About Our Coffee</h2>
+            <p>
+                We believe coffee is more than a drink — it's a ritual.
+                Every cup is brewed using freshly ground beans to preserve
+                aroma, richness, and depth of flavor.
+            </p>
+            <p>
+                Our roasting process highlights natural tasting notes like
+                chocolate, caramel, citrus, and subtle floral hints.
+                Each sip is designed to deliver balance, smoothness, and clarity.
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <section class="sourcing">
+        <div class="container">
+            <h2>Fresh Coffee Beans From Around the World</h2>
+            <p>
+                We source our beans from high-altitude farms in Colombia,
+                Ethiopia, and Brazil — regions known for producing some of the
+                finest Arabica beans in the world.
+            </p>
+            <p>
+                Partnering directly with farmers ensures sustainable practices,
+                fair trade, and consistent premium quality in every batch.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="experience">
+        <div class="overlay-text-end">
+            <div class="container">
+                <h2>The Coffee Experience</h2>
+                <p>
+                    The aroma welcomes you before the first sip.
+                    The warmth of the cup in your hands.
+                    The smooth texture and balanced flavor profile.
+                </p>
+                <p>
+                    Whether you're starting your morning, studying for hours,
+                    or meeting friends — we aim to make every visit memorable.
+                </p>
+            </div>
+        </div>
+    </section>  -->
+
+    <footer>
+        <div class="bottom-SEO">
+            <div class="footer-logo">
+                <img src="logo.png" alt="logo" height="80px">
+            </div>
+            <div class="footer-container">
+                <a href="../menu/menu.html" class="nav-link">menu</a>
+                <a href="../home/latte-coffee-art-paint.jpg" class="nav-link">locations</a>
+                <a href="../joinTeam.html" class="nav-link">deliveries</a>
+                <a href="" class="nav-link">events</a>
+            </div>
+            <div class="footer-container">
+                <a href="../account/membership.html" class="nav-link">membership</a>
+                <a href="" class="nav-link">reviews</a>
+                <a href="" class="nav-link">accessabilty</a>
+            </div>
+            <div class="socials">
+                <a href="../contactUs.html" class="nav-link">contact us</a>
+                 <!--whatsapp--> 
+                <a href="https://wa.me/972507331829?text=Hi%20I%20would%20like%20to%20order%20a%20coffee" target="_blank" class="whatsapp-icon">
+                    <span>let's talk</span>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class="nav-link">follow us:</a>
+
+                <div class="follow-icons">
+                    <a href="https://instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://tiktok.com/" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                    <a href="https://facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <span class="footer-separator"></span>
+        <p>&copy; 2026 Arvane | Crafted With Passion</p>
+    </footer>
+
+
+</body>
+</html>
+
+<!-- 
+1) nav bar (logo, (menu, contact us, membership) join us, sign in)
+2) hero
+3) why choose us? 
+
+4) products (some of the main menu products)
+5) about the product 
+6) optionally another product (bags of beans)
+7) footer (logo, more links, all rigths reserved) 
+
+on the side put an accessabilty button
+-->
