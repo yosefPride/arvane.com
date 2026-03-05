@@ -1,8 +1,10 @@
 body {
-    margin: 0;
     line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    /*to ensure it looks good on all screen sizes*/
+    max-width: 1200px;  
+    margin: 0;
 }
 
 .logo {
@@ -12,7 +14,7 @@ body {
 header {
     width: 100vw;
     background-color: #1d100d;
-    height: 150px;
+    height: 18vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,36 +26,36 @@ header a:hover {
 }
 
 .nav-links {
-    margin-right: 40%;
+    margin-right: 30%;
     display: flex;
-    gap: 40px;
+    gap: 3rem;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .nav-CTA {
-    margin-right: 50px;
+    margin-right: 4%;
     display: flex;
-    gap: 40px;
+    gap: 3rem;
 }
 
 .nav-CTA > a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .nav-CTA button {
     color: white;
     background-color: #1d100d;
-    font-size: 20px;
+    font-size: 1.5rem;
     border-radius: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
     cursor: pointer;
 }
 
@@ -62,8 +64,8 @@ header a:hover {
   position: fixed;         /* stays on top */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5); /* dim background */
   display: flex;           /* enables centering */
   justify-content: center;
@@ -76,11 +78,11 @@ header a:hover {
   background:  white;
   padding: 20px;
   border-radius: 10px;
-  width: 500px;
-  height: 430px;
+  width: 30%;
+  height: 52%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   color: black;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .form-container input,
@@ -100,7 +102,7 @@ header a:hover {
 }
 
 .form-container button {
-  margin-top: 30px;
+  margin-top: 1.8rem;
   background-color: #1d100d;
   color: white;
 ;
@@ -110,7 +112,7 @@ header a:hover {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 65px;
+  font-size: 5rem;
   font-weight: bold;
   cursor: pointer;
   color: white;
@@ -124,6 +126,7 @@ header a:hover {
 .choose-category  {
     background-color: #d3d2d0;
     border-radius: 10px;
+    width: 90vw;
     height: 70vh;
     margin-top: 5%;
     margin-left: 5%;
@@ -147,16 +150,16 @@ header a:hover {
 .choices {
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 3%;
+    margin-top: 2%;
     display: flex;
-    gap: 100px;
+    gap: 5rem;
 }
 
 .choice-link {
     display: flex;
     align-items: center;
-    width: 400px;
-    height: 200px;
+    width: 25%;
+    height: 12rem;
     border-radius: 10px;
     gap: 20px;
 }
@@ -168,10 +171,10 @@ header a:hover {
     border-radius: 50%;
 }
 
-.choice-link-overlay-text {
+.choice-link-text {
     display: inline-block;       /* shrink-wrap to the text */
     padding-inline: 15px;           /* small buffer around letters */
-    font-size: 20px;
+    font-size: 1.2rem;
     color: black;
     text-decoration: none;
 }
@@ -182,15 +185,25 @@ header a:hover {
 /* beginning of trending section  */
 #trending {
     margin-top: 5%;
+    width: 100vw;
     height: 80vh;
     background-color: #3d3837;
 }
 
 #trending h2 {
     color: white;
-    font-size: 40px;
-    padding-top: 5%;
+    font-size: 2rem;
+    padding-top: 3%;
     padding-left: 5%;
+}
+
+.trending-separator {
+    content: "";              /* Needed to display the line */
+    display: block;           /* Make it appear as a block below the text */
+    width: 100vw;             /* Length of the line */
+    height: 1px;              /* Thickness of the line */
+    background-color: #8b8b8c; 
+    margin: 8px auto 0;       /* Center the line and add space above it */
 }
 
 .menu-items {
@@ -220,7 +233,7 @@ header a:hover {
 .item button {
     background-color: #3d3837;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: white;
     padding: 6px;
 }
@@ -229,12 +242,62 @@ header a:hover {
     margin-left: 5%;
     margin-right: 5%;
 }
-/*end of trending section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+#drinks {
+    height: 80vh;
+}
+
+/* 
+#bakery {
+    height: 70vh;
+    background-color: #5a5857;
+}
+
+
+#breakfast {
+    height: 85vh;
+}
+
+
+#lunch {
+    height: 85vh;
+}
+
+
+#dinner {
+    height: 85vh;
+}
+
+
+#cocktails-wine {
+    height: 75vh;
+}
+
+
+#home-brewing {
+    height: 100vh;
+} */
+
+
+
 
 /* beginning of footer  */
 footer {
     background-color: #1d100d;
-    height: 400px;
+    width: 100vw;
+    height: 50vh;
     color: white;
 }
 
