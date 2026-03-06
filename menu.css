@@ -5,6 +5,16 @@ body {
     /*to ensure it looks good on all screen sizes*/
     max-width: 1200px;  
     margin: 0;
+    width: 100vw;
+}
+
+.separator {
+    content: "";              /* Needed to display the line */
+    display: block;           /* Make it appear as a block below the text */
+    width: 100%;             /* Length of the line */
+    height: 1px;              /* Thickness of the line */
+    background-color: #4d4941; 
+    margin: 8px auto 0;       /* Center the line and add space above it */
 }
 
 .logo {
@@ -123,8 +133,13 @@ header a:hover {
 
 
 /*beginning of choose category*/
-.choose-category  {
-    background-color: #d3d2d0;
+.choose-category {
+    width: 100vw;
+    background-color: white;
+}
+
+.menu-container  {
+    background-color: #bebab0;
     border-radius: 10px;
     width: 90vw;
     height: 70vh;
@@ -133,7 +148,7 @@ header a:hover {
     margin-right: 5%;
 }
 
-.choose-category h1 {
+.menu-container h1 {
     padding-top: 2%;
     margin-left: 5%;
 }
@@ -164,6 +179,11 @@ header a:hover {
     gap: 20px;
 }
 
+.choice-link a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .choice-link img {
     width: 150px;
     height: 150px;
@@ -187,23 +207,14 @@ header a:hover {
     margin-top: 5%;
     width: 100vw;
     height: 80vh;
-    background-color: #3d3837;
+    background-color: #ebe5e3;
 }
 
 #trending h2 {
-    color: white;
+    color: black;
     font-size: 2rem;
     padding-top: 3%;
     padding-left: 5%;
-}
-
-.trending-separator {
-    content: "";              /* Needed to display the line */
-    display: block;           /* Make it appear as a block below the text */
-    width: 100vw;             /* Length of the line */
-    height: 1px;              /* Thickness of the line */
-    background-color: #8b8b8c; 
-    margin: 8px auto 0;       /* Center the line and add space above it */
 }
 
 .menu-items {
@@ -217,33 +228,64 @@ header a:hover {
 
 .item img {
     width: 100%;
-    height: 50%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+
     display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .item {
-    background-color: rgb(204, 200, 200);
+    background-color: rgb(185, 170, 170);
     border-radius: 8px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
 
 .item button {
-    background-color: #3d3837;
+    align-self: center; /* centers the button instead of stretching */
+    width: auto; /* prevent full-width */
+    margin-top: auto;
+    background-color: #1d100d;
     border-radius: 10px;
     font-size: 1.2rem;
     color: white;
     padding: 6px;
 }
 
-.item p {
-    margin-left: 5%;
-    margin-right: 5%;
+.item button:hover {
+    font-weight: bold;
 }
 
+.item p {
+    margin: 0 5%;
+    flex-grow: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+}
+/*end of trending section*/
 
+
+/* beginning of cocktails & wine section  */
+#cocktails-wine {
+    padding-top: 5%;
+    width: 100vw;
+    height: 80vh;
+    background-color: #ebe5e3;
+}
+
+ #cocktails-wine h2 {
+    color: black;
+    font-size: 2rem;
+    padding-top: 3%;
+    padding-left: 5%;
+}
 
 /* beginning of footer  */
 footer {
