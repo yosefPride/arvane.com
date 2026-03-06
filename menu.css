@@ -272,6 +272,29 @@ header a:hover {
 /*end of trending section*/
 
 
+/*beginning of drinks section*/
+#drinks {
+    padding-top: 5%;
+    width: 100vw;
+    height: 220vh;
+    background-color: #ebe5e3;
+}
+
+#drinks h2 {
+    color: black;
+    font-size: 2rem;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.drink-category-h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+
+
 /* beginning of cocktails & wine section  */
 #cocktails-wine {
     padding-top: 5%;
