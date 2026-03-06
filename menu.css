@@ -276,7 +276,7 @@ header a:hover {
 #drinks {
     padding-top: 5%;
     width: 100vw;
-    height: 150vh;
+    height: 520vh;
     background-color: #ebe5e3;
 }
 
@@ -293,7 +293,21 @@ header a:hover {
     text-decoration: underline;
 }
 
+/* beginning of cocktails & wine section  */
+#bakery {
+    padding-top: 5%;
+    width: 100vw;
+    height: 130vh;
+    background-color: #ebe5e3;
+    padding-bottom: 10vh;
+}
 
+ #bakery h2 {
+    color: black;
+    font-size: 2rem;
+    padding-top: 3%;
+    padding-left: 5%;
+}
 
 /* beginning of cocktails & wine section  */
 #cocktails-wine {
