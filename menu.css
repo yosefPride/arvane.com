@@ -1,3 +1,19 @@
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .choose-category {grid-area: 2 / span 1;}
+  #trending {grid-area: 2 / span 4;}
+  #drinks {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+
+@media (min-width: 768px) {
+  .header {grid-area: 1 / span 6;}
+  .choose-category {grid-area: 2 / span 1;}
+  #trending {grid-area: 2 / span 4;}
+  #drinks {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+
 body {
     line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,6 +22,7 @@ body {
     max-width: 1200px;  
     margin: 0;
     width: 100vw;
+    overflow-y:scroll;
 }
 
 .separator {
@@ -130,6 +147,28 @@ header a:hover {
 /* end of header/nav-bar */
 
 
+/*beginning of hidden navbar*/
+#hidden-navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: #1d100d;
+    display: none;
+    padding: 15px;
+}
+
+#hidden-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 4%;
+}
+
+#hidden-navbar a {
+    color: white;
+    text-decoration: none;
+}
 
 
 /*beginning of choose category*/
@@ -237,6 +276,7 @@ header a:hover {
 }
 
 .item {
+    width: 18vw;
     background-color: rgb(185, 170, 170);
     border-radius: 8px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
@@ -276,7 +316,7 @@ header a:hover {
 #drinks {
     padding-top: 5%;
     width: 100vw;
-    height: 520vh;
+    height: 530vh;
     background-color: #ebe5e3;
 }
 
@@ -293,7 +333,8 @@ header a:hover {
     text-decoration: underline;
 }
 
-/* beginning of cocktails & wine section  */
+
+/* beginning of bakery section  */
 #bakery {
     padding-top: 5%;
     width: 100vw;
@@ -309,12 +350,47 @@ header a:hover {
     padding-left: 5%;
 }
 
+
+/* beginning of breakfast section  */
+#breakfast {
+    padding-top: 5%;
+    width: 100vw;
+    height: 130vh;
+    background-color: #ebe5e3;
+    padding-bottom: 10vh;
+}
+
+ #breakfast h2 {
+    color: black;
+    font-size: 2rem;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+
+/* beginning of lunch section  */
+#lunch {
+    padding-top: 5%;
+    width: 100vw;
+    height: 200vh;
+    background-color: #ebe5e3;
+    padding-bottom: 10vh;
+}
+
+ #lunch h2 {
+    color: black;
+    font-size: 2rem;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
 /* beginning of cocktails & wine section  */
 #cocktails-wine {
     padding-top: 5%;
     width: 100vw;
     height: 80vh;
     background-color: #ebe5e3;
+    padding-bottom: 10vh;
 }
 
  #cocktails-wine h2 {
@@ -323,6 +399,7 @@ header a:hover {
     padding-top: 3%;
     padding-left: 5%;
 }
+
 
 /* beginning of footer  */
 footer {
