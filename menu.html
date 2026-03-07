@@ -9,9 +9,9 @@
 </head>
 <body>
 
-    <header>
+    <header id="page-top">
         <div class="logo">
-            <a href="index.html"><img src="logo.png" alt="logo" height="80px"></a>
+            <a href="index.html"><img src="images/logo.png" alt="logo" height="80px"></a>
         </div>
         <div class="nav-links">
             <a href="locations.html">Locations</a>
@@ -60,6 +60,20 @@
         </div>
     </header>
 
+    <nav id="hidden-navbar">
+        <ul>
+            <li><a href="#page-top">Back To Top</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#drinks">Drinks</a> <!--add inner menu that opens upon hovering--></li>
+            <li><a href="#bakery">Bakery</a></li>
+            <li><a href="#breakfast">Breakfast</a></li>
+            <li><a href="#lunch">Lunch</a></li>
+            <li><a href="#dinner">Dinner</a></li>
+            <li><a href="#cocktails-wine">Cocktails & Wine</a></li>
+            <li><a href="#home-brewing">Home Brewing</a></li>
+        </ul>
+    </nav>
+
     <section class="choose-category">
         <div class="menu-container">
             <h1>Menu</h1>
@@ -67,25 +81,25 @@
             <div class="choices">
                 <div class="choice-link">
                     <a href="#trending">
-                        <img src="trending.jpeg" alt="coffee drink">
+                        <span><img src="images/trending.jpeg" alt="coffee drink"></span>
                     </a>
                     <a href="#trending" class="choice-link-text">Trending</a>
                 </div>
                 <div class="choice-link">
                     <a href="#drinks">
-                        <img src="drinks.jpg" alt="coffee drink">
+                        <img src="images/drinks.jpg" alt="coffee drink">
                     </a>
                     <a href="#drinks" class="choice-link-text">Drinks</a>
                 </div>
                 <div class="choice-link">
                     <a href="#bakery">
-                        <img src="croissant.jpg" alt="croissant">
+                        <img src="images/croissant.jpg" alt="croissant">
                     </a>
                     <a href="#bakery" class="choice-link-text">Bakery</a>
                 </div>
                 <div class="choice-link">
                     <a href="#breakfast">
-                        <img src="breakfast.jpeg" alt="breakfast">
+                        <img src="images/breakfast.jpeg" alt="breakfast">
                     </a>
                     <a href="#breakfast" class="choice-link-text">Breakfast</a>
                 </div>
@@ -93,25 +107,25 @@
             <div class="choices">
                 <div class="choice-link">
                     <a href="#lunch">
-                        <img src="lunch.jpg" alt="lunch">
+                        <img src="images/lunch.jpg" alt="lunch">
                     </a>
                     <a href="#lunch" class="choice-link-text">Lunch</a>
                 </div>
                 <div class="choice-link">
                     <a href="#dinner">
-                        <img src="dinner.jpg" alt="dinner">
+                        <img src="images/dinner.jpg" alt="dinner">
                     </a>
                     <a href="#dinner" class="choice-link-text">Dinner</a>
                 </div>
                 <div class="choice-link">
                     <a href="#cocktails-wine">
-                        <img src="cocktails.jpg" alt="cocktails">
+                        <img src="images/cocktails.jpg" alt="cocktails">
                     </a>
                     <a href="#cocktails-wine" class="choice-link-text">Cocktails & Wine</a>
                 </div>
                 <div class="choice-link">
                     <a href="#home-brewing">
-                        <img src="coffee-bag-2.jpg" alt="packaged coffee beans">
+                        <img src="images/coffee-bag-2.jpg" alt="packaged coffee beans">
                     </a>
                     <a href="#home-brewing" class="choice-link-text">Home Brewing</a>
                 </div>
@@ -124,28 +138,28 @@
         <span class="separator"></span>
         <div class="menu-items">
             <div class="item">
-                <img src="espresso.jpeg" alt="">
+                <img src="images/espresso.jpeg" alt="espresso">
                 <h3>Espresso</h3>
                 <p>Strong and bold single shot coffee.</p>
-                <p class="price">$3.00</p>
+                <p class="price">$2.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="cappuccino.jpeg" alt="">
+                <img src="images/cappuccino.jpeg" alt="cappuccino">
                 <h3>Cappuccino</h3>
                 <p>Rich espresso with steamed milk foam.</p>
                 <p class="price">$4.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="chcolate-milkshake.jpeg" alt="">
+                <img src="images/chcolate-milkshake.jpeg" alt="chocolate milkshake">
                 <h3>Chocolate Milkshake</h3>
                 <p>Thick and creamy with real chocolate.</p>
                 <p class="price">$7.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="vannila-milkshake.jpeg" alt="">
+                <img src="images/vannila-milkshake.jpeg" alt="vanilla milkshake">
                 <h3>Vanilla Milkshake</h3>
                 <p>Classic vanilla flavor, smooth and sweet.</p>
                 <p class="price">$7.50</p>
@@ -153,21 +167,21 @@
             </div>
         </div>
     </section>
-
+ 
    <section id="drinks">
         <h2>Drinks:</h2>
         <span class="separator"></span>
         <h3 class="drink-category-h3">Espresso Classics</h3>
         <div class="menu-items">
             <div class="item">
-                <img src="espresso.jpeg" alt="espresso">
+                <img src="images/espresso.jpeg" alt="espresso">
                 <h3>Espresso</h3>
                 <p>Strong and bold single shot coffee.</p>
                 <p class="price">$2.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="double-espresso.jpeg" alt="double espresso">
+                <img src="images/double-espresso.jpeg" alt="double espresso">
                 <h3>Double Espresso</h3>
                 <p>Two shots of espresso for a stronger flavor.</p>
                 <p class="price">$3.50</p>
@@ -181,7 +195,7 @@
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="latte.jpeg" alt="latte">
+                <img src="images/latte.jpeg" alt="latte">
                 <h3>Latte</h3>
                 <p>Espresso with steamed milk and a light layer of foam.</p>
                 <p class="price">$5.00</p>
@@ -190,60 +204,61 @@
         </div>
         <div class="menu-items">
             <div class="item">
-                <img src="cappuccino.jpeg" alt="cappuccino">
+                <img src="images/cappuccino.jpeg" alt="cappuccino">
                 <h3>Cappuccino</h3>
                 <p>Rich espresso with steamed milk foam.</p>
                 <p class="price">$4.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="flat-white.jpeg" alt="flat white">
+                <img src="images/flat-white.jpeg" alt="flat white">
                 <h3>Flat White</h3>
                 <p>Velvety microfoam milk with a double shot of espresso.</p>
                 <p class="price">$5.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="cortado.jpeg" alt="cortado">
+                <img src="images/cortado.jpeg" alt="cortado">
                 <h3>Cortado</h3>
                 <p>Equal parts espresso and steamed milk.</p>
                 <p class="price">$4.75</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="macchiato.jpeg" alt="macchiato">
+                <img src="images/macchiato.jpeg" alt="macchiato">
                 <h3>Macchiato</h3>
                 <p>Espresso “stained” with a small amount of milk foam.</p>
                 <p class="price">$4.00</p>
                 <button>Order Now</button>
             </div>
         </div>
-   
+
+
         <h3 class="drink-category-h3">Specialty Lattes</h3>
         <div class="menu-items">
             <div class="item">
-                <img src="mocha.jpeg" alt="mocha">
+                <img src="images/mocha.jpeg" alt="mocha">
                 <h3>Mocha</h3>
                 <p>Espresso with chocolate and steamed milk.</p>
                 <p class="price">$6.00</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="white-chocolate-mocha.jpeg" alt="white chocolate mocha">
+                <img src="images/white-chocolate-mocha.jpeg" alt="white chocolate mocha">
                 <h3>White Chocolate Mocha</h3>
                 <p>Espresso with white chocolate and steamed milk.</p>
                 <p class="price">$6.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="honey-cinnamon-latte.jpeg" alt="honey cinnamon latte">
+                <img src="images/honey-cinnamon-latte.jpeg" alt="honey cinnamon latte">
                 <h3>Honey Cinnamon Latte</h3>
                 <p>Latte sweetened with honey and cinnamon spice.</p>
                 <p class="price">$6.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="pistachio-latte.jpeg" alt="pistachio latte">
+                <img src="images/pistachio-latte.jpeg" alt="pistachio latte">
                 <h3>Pistachio Latte</h3>
                 <p>Nutty pistachio flavor blended with espresso and milk.</p>
                 <p class="price">$7.00</p>
@@ -252,28 +267,28 @@
         </div>
         <div class="menu-items">
             <div class="item">
-                <img src="dark-chocolate-mocha.jpeg" alt="dark chocolate mocha">
+                <img src="images/dark-chocolate-mocha.jpeg" alt="dark chocolate mocha">
                 <h3>Dark Chocolate Mocha</h3>
                 <p>Rich dark chocolate blended with espresso.</p>
                 <p class="price">$6.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="hazelnut-mocha.jpeg" alt="hazelnut mocha">
+                <img src="images/hazelnut-mocha.jpeg" alt="hazelnut mocha">
                 <h3>Hazelnut Mocha</h3>
                 <p>Chocolate mocha infused with roasted hazelnut flavor.</p>
                 <p class="price">$6.75</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="vanilla-bean-latte.jpeg" alt="vanilla bean latte">
+                <img src="images/vanilla-bean-latte.jpeg" alt="vanilla bean latte">
                 <h3>Vanilla Bean Latte</h3>
                 <p>Smooth latte flavored with real vanilla.</p>
                 <p class="price">$6.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="caramel-sea-salt-latte.jpeg" alt="Caramel Sea Salt Latte">
+                <img src="images/caramel-sea-salt-latte.jpeg" alt="Caramel Sea Salt Latte">
                 <h3>Caramel Sea Salt Latte</h3>
                 <p>Sweet caramel balanced with a hint of sea salt.</p>
                 <p class="price">$7.00</p>
@@ -281,31 +296,32 @@
             </div>
         </div>
 
+
         <h3 class="drink-category-h3">Cold Drinks</h3>
         <div class="menu-items">
             <div class="item">
-                <img src="cold-brew.jpeg" alt="Cold Brew">
+                <img src="images/cold-brew.jpeg" alt="Cold Brew">
                 <h3>Cold Brew</h3>
                 <p>Coffee steeped cold for 12–24 hours, smooth and bold.</p>
                 <p class="price">$5.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="nitro-cold-brew.jpeg" alt="Nitro Cold Brew">
+                <img src="images/nitro-cold-brew.jpeg" alt="Nitro Cold Brew">
                 <h3>Nitro Cold Brew</h3>
                 <p>Cold brew infused with nitrogen for a creamy texture.</p>
                 <p class="price">$6.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="iced-coffee.jpeg" alt="Iced Coffee">
+                <img src="images/iced-coffee.jpeg" alt="Iced Coffee">
                 <h3>Iced Coffee</h3>
                 <p>Chilled brewed coffee served over ice.</p>
                 <p class="price">$4.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="iced-caramel-latte.jpeg" alt="Iced Caramel Latte">
+                <img src="images/iced-caramel-latte.jpeg" alt="Iced Caramel Latte">
                 <h3>Iced Caramel Latte</h3>
                 <p>Iced latte sweetened with caramel syrup.</p>
                 <p class="price">$6.00</p>
@@ -314,14 +330,14 @@
         </div>
         <div class="menu-items">
             <div class="item">
-                <img src="iced-matcha-latte.jpeg" alt="Iced Matcha Latte">
+                <img src="images/iced-matcha-latte.jpeg" alt="Iced Matcha Latte">
                 <h3>Iced Matcha Latte</h3>
                 <p>Cold matcha green tea with milk and light sweetness.</p>
                 <p class="price">$6.00</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="iced-vanilla-latte.jpeg" alt="iced vanilla latte">
+                <img src="images/iced-vanilla-latte.jpeg" alt="iced vanilla latte">
                 <h3>Iced Vanilla Latte</h3>
                 <p>Cold espresso drink with vanilla and milk.</p>
                 <p class="price">$6.00</p>
@@ -336,28 +352,28 @@
         <h3 class="drink-category-h3">Tea & Matcha</h3>
         <div class="menu-items">
             <div class="item">
-                <img src="black-tea.jpeg" alt="black tea">
+                <img src="images/black-tea.jpeg" alt="black tea">
                 <h3>Black Tea</h3>
                 <p>Classic full-bodied hot tea.</p>
                 <p class="price">$3.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="green-tea.jpeg" alt="Green Tea">
+                <img src="images/green-tea.jpeg" alt="Green Tea">
                 <h3>Green Tea</h3>
                 <p>Light and refreshing traditional green tea.</p>
                 <p class="price">$3.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="chai-latte.jpeg" alt="Chai Latte">
+                <img src="images/chai-latte.jpeg" alt="Chai Latte">
                 <h3>Chai Latte</h3>
                 <p>Spiced Indian tea blended with steamed milk.</p>
                 <p class="price">$5.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="matcha-latte.jpeg" alt="Matcha Latte">
+                <img src="images/matcha-latte.jpeg" alt="Matcha Latte">
                 <h3>Matcha Latte</h3>
                 <p>Japanese matcha powder whisked with steamed milk.</p>
                 <p class="price">$6.50</p>
@@ -368,28 +384,28 @@
         <h3 class="drink-category-h3">Hot Chocolate & Milkshakes</h3>
         <div class="menu-items">
             <div class="item">
-                <img src="hot-chocolate.jpeg" alt="Hot Chocolate">
+                <img src="images/hot-chocolate.jpeg" alt="Hot Chocolate">
                 <h3>Hot Chocolate</h3>
                 <p>Creamy milk with rich melted chocolate.</p>
                 <p class="price">$6.00</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="hot-belgian-chocolate.jpeg" alt="Belgian Hot Chocolate">
+                <img src="images/hot-belgian-chocolate.jpeg" alt="Belgian Hot Chocolate">
                 <h3>Belgian Hot Chocolate</h3>
                 <p>Premium chocolate drink made with Belgian cocoa.</p>
                 <p class="price">$7.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="chcolate-milkshake.jpeg" alt="chocolate milkshake">
+                <img src="images/chcolate-milkshake.jpeg" alt="chocolate milkshake">
                 <h3>Chocolate Milkshake</h3>
                 <p>Thick and creamy with real chocolate.</p>
                 <p class="price">$7.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="vannila-milkshake.jpeg" alt="vanilla milkshake">
+                <img src="images/vannila-milkshake.jpeg" alt="vanilla milkshake">
                 <h3>Vanilla Milkshake</h3>
                 <p>Classic vanilla flavor, smooth and sweet.</p>
                 <p class="price">$7.50</p>
@@ -398,33 +414,34 @@
         </div>
    </section>
 
+
    <section id="bakery">
         <h2>Bakery:</h2>
         <span class="separator"></span>
         <div class="menu-items">
             <div class="item">
-                <img src="" alt="Croissant">
+                <img src="images/croissant2.jpeg" alt="Croissant">
                 <h3>Croissant</h3>
                 <p>Buttery, flaky French pastry baked fresh daily.</p>
                 <p class="price">$4.00</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="" alt="Chocolate Croissant">
+                <img src="images/chocolate-croissant.jpeg" alt="Chocolate Croissant">
                 <h3>Chocolate Croissant</h3>
                 <p>Croissant filled with rich melted chocolate.</p>
                 <p class="price">$4.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="" alt="Blueberry Muffin">
+                <img src="images/blueberry-muffin.jpeg" alt="Blueberry Muffin">
                 <h3>Blueberry Muffin</h3>
                 <p>Soft muffin packed with sweet blueberries.</p>
                 <p class="price">$4.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="" alt="Banana Bread">
+                <img src="images/banana-bread.jpeg" alt="Banana Bread">
                 <h3>Banana Bread</h3>
                 <p>Moist loaf cake made with ripe bananas.</p>
                 <p class="price">$4.50</p>
@@ -434,28 +451,28 @@
 
         <div class="menu-items">
             <div class="item">
-                <img src="" alt="Cinnamon Roll">
+                <img src="images/cinnamon-roll.jpeg" alt="Cinnamon Roll">
                 <h3>Cinnamon Roll</h3>
                 <p>Sweet roll with cinnamon sugar and glaze.</p>
                 <p class="price">$4.50</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="" alt="Cheesecake Slice">
+                <img src="images/cheesecake.jpeg" alt="Cheesecake Slice">
                 <h3>Cheesecake Slice</h3>
                 <p>Creamy baked cheesecake on a buttery crust.</p>
                 <p class="price">$4.25</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="" alt="Chocolate Chip Cookie">
+                <img src="images/chocolate-chip-cookie.jpeg" alt="Chocolate Chip Cookie">
                 <h3>Chocolate Chip Cookie</h3>
                 <p>Soft baked cookie with dark chocolate chips.</p>
                 <p class="price">$2.75</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="" alt="Banana Bread">
+                <img src="images/lemon-loaf.jpeg" alt="Banana Bread">
                 <h3>Lemon Loaf</h3>
                 <p>Light cake with bright lemon flavor and glaze.</p>
                 <p class="price">$4.50</p>
@@ -464,19 +481,199 @@
         </div>
    </section>
 
+   <section id="breakfast">
+        <h2>Breakfast:</h2>
+        <span class="separator"></span>
+        <div class="menu-items">
+            <div class="item">
+                <img src="images/avocado-toast.jpeg" alt="Avocado Toast">
+                <h3>Avocado Toast</h3>
+                <p>Toasted artisan bread topped with smashed avocado, olive oil, and sea salt.</p>
+                <p class="price">$10.50</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/bacon-egg-cheese-sandwich.jpeg" alt="Bacon, Egg & Cheese Sandwich">
+                <h3>Bacon, Egg & Cheese Sandwich</h3>
+                <p>Crispy bacon, eggs, and cheese served on toasted bread.</p>
+                <p class="price">$13.75</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/breakfast-croissant.jpeg" alt="Breakfast Croissant">
+                <h3>Breakfast Croissant</h3>
+                <p>Flaky croissant filled with eggs and melted cheese.</p>
+                <p class="price">$11.50</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/egg-cheese-sandwich.jpeg" alt="Egg & Cheese Sandwich">
+                <h3>Egg & Cheese Sandwich</h3>
+                <p>Scrambled eggs and melted cheese on a toasted bun.</p>
+                <p class="price">$11.25</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="menu-items">
+            <div class="item">
+                <img src="images/breakfast-burrito.jpeg" alt="Avocado Toast">
+                <h3>Breakfast Burrito</h3>
+                <p>Warm tortilla filled with eggs, cheese, and breakfast potatoes.</p>
+                <p class="price">$15.00</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/pancake-stack.jpeg" alt="Pancake Stack">
+                <h3>Pancake Stack</h3>
+                <p>Fluffy pancakes served with maple syrup and butter.</p>
+                <p class="price">$14.25</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/greek-yogurt.jpeg" alt="Greek Yogurt Parfait">
+                <h3>Greek Yogurt Parfait</h3>
+                <p>Creamy yogurt layered with granola and fresh fruit.</p>
+                <p class="price">$13.75</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/oatmeal.jpeg" alt="Oatmeal Bowl">
+                <h3>Oatmeal Bowl</h3>
+                <p>Warm oats topped with honey and seasonal fruit.</p>
+                <p class="price">$11.00</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+   </section>
+   
+   <section id="lunch">
+        <h2>Lunch:</h2>
+        <span class="separator"></span>
+        <div class="menu-items">
+            <div class="item">
+                <img src="images/" alt="Grilled Chicken Sandwich">
+                <h3>Grilled Chicken Sandwich</h3>
+                <p>Grilled chicken breast with lettuce, tomato, and garlic aioli on toasted bread.</p>
+                <p class="price">$14.50</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="Classic Cheeseburger">
+                <h3>Classic Cheeseburger</h3>
+                <p>Grilled beef patty with cheddar cheese, lettuce, tomato, and house sauce.</p>
+                <p class="price">$17.50</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="Club Sandwich">
+                <h3>Club Sandwich</h3>
+                <p>Triple-layer sandwich with turkey, bacon, lettuce, tomato, and mayo.</p>
+                <p class="price">$13.00</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="BBQ Pulled Beef Sandwich">
+                <h3>BBQ Pulled Beef Sandwich</h3>
+                <p>Slow-cooked shredded beef in smoky BBQ sauce on a toasted bun.</p>
+                <p class="price">$16.50</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="menu-items">
+            <div class="item">
+                <img src="images/" alt="Sirloin Steak">
+                <h3>Sirloin Steak</h3>
+                <p>Tender grilled sirloin steak served with sweet potatoes and seasonal vegetables.</p>
+                <p class="price">$26.50</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="Ribeye Steak Plate">
+                <h3>Ribeye Steak Plate</h3>
+                <p>Juicy grilled ribeye steak served with roasted potatoes and vegetables.</p>
+                <p class="price">$30.00</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="Grilled Salmon">
+                <h3>Grilled Salmon</h3>
+                <p>Fresh salmon fillet grilled and served with lemon and mixed greens.</p>
+                <p class="price">$20.00</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="Chicken Alfredo">
+                <h3>Chicken Alfredo</h3>
+                <p>Classic Alfredo pasta with grilled chicken and parmesan.</p>
+                <p class="price">$19.50</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="menu-items">
+            <div class="item">
+                <img src="images/" alt="Pasta Alfredo">
+                <h3>Pasta Alfredo</h3>
+                <p>Creamy Alfredo pasta topped with parmesan cheese.</p>
+                <p class="price">$16.25</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="Steakhouse Salad">
+                <h3>Steakhouse Salad</h3>
+                <p>Mixed greens topped with sliced steak, cherry tomatoes, and balsamic dressing.</p>
+                <p class="price">$18.00</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="Chicken Caesar Salad">
+                <h3>Chicken Caesar Salad</h3>
+                <p>Romaine lettuce, grilled chicken, parmesan, croutons, and Caesar dressing.</p>
+                <p class="price">$13.75</p>
+                <button>Order Now</button>
+            </div>
+            <div class="item">
+                <img src="images/" alt="Roasted Vegetable Bowl">
+                <h3>Roasted Vegetable Bowl</h3>
+                <p>Seasonal roasted vegetables served over rice with herb dressing.</p>
+                <p class="price">$11.00</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+   </section>
+
+   <!--
+   <section id="dinner">
+        <h2>Dinner</h2>
+        | Item                 | Price  | Description                                                                |
+        | -------------------- | ------ | -------------------------------------------------------------------------- |
+        | Ribeye Steak         | $21.50 | Grilled ribeye steak served with roasted potatoes and seasonal vegetables. |
+        | Filet Mignon         | $24.50 | Tender beef filet cooked to order with garlic butter and vegetables.       |
+        | Sirloin Steak        | $19.50 | Grilled sirloin steak served with mashed potatoes and herb sauce.          |
+        | Grilled Salmon       | $18.50 | Fresh salmon fillet grilled with lemon and served with rice and greens.    |
+        | Garlic Butter Shrimp | $17.50 | Shrimp sautéed in garlic butter served over rice.                          |
+        | Roast Chicken        | $16.50 | Oven-roasted chicken served with potatoes and seasonal vegetables.         |
+        | Steakhouse Burger    | $14.50 | Thick grilled beef burger with cheddar, caramelized onions, and fries.     |
+        | Pasta Alfredo        | $14.50 | Creamy Alfredo pasta topped with parmesan cheese.                          |
+        | Chicken Alfredo      | $16.50 | Alfredo pasta with grilled chicken and parmesan.                           |
+        | Steakhouse Salad     | $14.00 | Mixed greens topped with sliced steak, tomatoes, and balsamic dressing.    |
+        | Vegetable Pasta      | $13.50 | Pasta tossed with roasted vegetables and garlic olive oil.                 |
+        | BBQ Beef Plate       | $18.00 | Slow-cooked beef served with roasted potatoes and house BBQ sauce.         |
+
+   </section> -->
+
    <section id="cocktails-wine">
         <h2>Cocktails & Wine:</h2>
         <span class="separator"></span>
         <div class="menu-items">
             <div class="item">
-                <img src="negroni.jpeg" alt="negroni">
+                <img src="images/negroni.jpeg" alt="negroni">
                 <h3>Negroni</h3>
                 <p>Bittersweet Negroni: gin, Campari, vermouth harmony.</p>
                 <p class="price">$13.00</p>
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="margarita.jpeg" alt="margarita">
+                <img src="images/margarita.jpeg" alt="margarita">
                 <h3>Margarita</h3>
                 <p>Bright lime, tequila, salt—classic margarita refreshment.</p>
                 <p class="price">$14.50</p>
@@ -490,7 +687,7 @@
                 <button>Order Now</button>
             </div>
             <div class="item">
-                <img src="espresso-martini.jpeg" alt="espresso martini">
+                <img src="images/espresso-martini.jpeg" alt="espresso martini">
                 <h3>Espresso Martini</h3>
                 <p>Rich espresso meets smooth vodka elegance..</p>
                 <p class="price">$18.00</p>
@@ -499,22 +696,26 @@
         </div>
    </section>
 
+   <!-- <section id="home-brewing">
+        <h2>Home Brewing</h2>
+   </section> -->
+
     <footer>
         <div class="bottom-SEO">
             <div class="footer-logo">
-                <img src="logo.png" alt="logo" height="80px">
+                <img src="images/logo.png" alt="logo" height="80px">
             </div>
             <div class="footer-container">
                 <a href="menu.html" class="nav-link">Menu</a>
                 <a href="latte-coffee-art-paint.jpg" class="nav-link">Locations</a>
                 <a href="joinTeam.html" class="nav-link">Deliveries</a>
-                <a href="joinTeam.html" class="nav-link">Events</a>
+                <a href="" class="nav-link">Events</a>
             </div>
             <div class="footer-container">
                 <a href="membership.html" class="nav-link">Membership</a>
-                <a href="joinTeam.html" class="nav-link">Reviews</a>
-                <a href="joinTeam.html" class="nav-link">Accessibility</a>
-                <a href="joinTeam.html" class="nav-link">Terms & Privacy</a>
+                <a href="" class="nav-link">Reviews</a>
+                <a href="" class="nav-link">Accessibility</a>
+                <a href="" class="nav-link">Terms & Privacy</a>
             </div>
             <div class="socials">
                 <a href="contactUs.html" class="nav-link">Contact us</a>
@@ -543,6 +744,23 @@
         <span class="footer-separator"></span>
         <p>&copy; 2026 Arvane | Crafted With Passion</p>
     </footer>
+
+
+    <script>
+        const navbar = document.getElementById("hidden-navbar");
+        const menu = document.querySelector(".choose-category");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > menu.offsetHeight) {
+                navbar.style.display = "block";
+            } 
+            else {
+                navbar.style.display = "none";
+            }
+
+        });
+    </script>
 
 </body>
 </html>
