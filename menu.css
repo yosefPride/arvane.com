@@ -245,7 +245,7 @@ header a:hover {
 #trending {
     margin-top: 5%;
     width: 100vw;
-    height: 80vh;
+    /* height: 80vh; */
     background-color: #ebe5e3;
 }
 
@@ -260,6 +260,7 @@ header a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    height: 60vh;
     margin-top: 2.5%;
     margin-left: 10%;
     margin-right: 10%;
@@ -314,9 +315,8 @@ header a:hover {
 
 /*beginning of drinks section*/
 #drinks {
-    padding-top: 5%;
+    padding-top: 5vh;
     width: 100vw;
-    height: 530vh;
     background-color: #ebe5e3;
 }
 
@@ -336,9 +336,8 @@ header a:hover {
 
 /* beginning of bakery section  */
 #bakery {
-    padding-top: 5%;
+    padding-top: 5vh;
     width: 100vw;
-    height: 130vh;
     background-color: #ebe5e3;
     padding-bottom: 10vh;
 }
@@ -353,9 +352,8 @@ header a:hover {
 
 /* beginning of breakfast section  */
 #breakfast {
-    padding-top: 5%;
+    padding-top: 5vh;
     width: 100vw;
-    height: 130vh;
     background-color: #ebe5e3;
     padding-bottom: 10vh;
 }
@@ -370,9 +368,8 @@ header a:hover {
 
 /* beginning of lunch section  */
 #lunch {
-    padding-top: 5%;
+    padding-top: 5vh;
     width: 100vw;
-    height: 200vh;
     background-color: #ebe5e3;
     padding-bottom: 10vh;
 }
@@ -386,9 +383,8 @@ header a:hover {
 
 /* beginning of cocktails & wine section  */
 #cocktails-wine {
-    padding-top: 5%;
+    padding-top: 5vh;
     width: 100vw;
-    height: 80vh;
     background-color: #ebe5e3;
     padding-bottom: 10vh;
 }
