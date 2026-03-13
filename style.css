@@ -120,8 +120,6 @@ header a:hover {
 }
 /* end of header/nav-bar */
 
-
-
 /* beginning of hero section */
 .hero {
     height: 85vh;
@@ -187,7 +185,6 @@ header a:hover {
         cursor: pointer;
         flex-shrink: 0;
     }
-    
     button:hover {
         transition: all 0.3s;
         transform:translateY(-12px) scale(1.03);
@@ -245,22 +242,20 @@ header a:hover {
 /* end of choose us section  */
 
 
-
-.about, .sourcing {
+/* .about, .sourcing {
     background-color: white;
-}
+} */
 
-.about p, .sourcing p, .experience p {
+/* .about p, .sourcing p, .experience p {
     max-width: 800px;
     margin: 10px auto;
     text-align: center;
-}
+} */
 
-
-.experience {
+/* .experience {
     position: relative;
     overflow: hidden;
-}
+} */
 
 .overlay-text-end {
   position: absolute;       /* position relative to container */
@@ -272,10 +267,6 @@ header a:hover {
   font-weight: bold;
   text-align: center;
 }
-
-
-
-
 
 /* beginning of footer  */
 footer {
