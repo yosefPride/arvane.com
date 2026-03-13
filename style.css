@@ -129,6 +129,7 @@ header a:hover {
     video {
         position: absolute;
         object-fit: cover ;
+        height: 100%;
         /* z-index: 0; */
         /* display: block; */
     }
