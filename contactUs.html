@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="contact-page">
 
     <header>
         <div class="logo">
@@ -17,13 +17,13 @@
             </a>
         </div>
 
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
 
-        <nav class="off-screen-menu">
+        <nav class="off-screen-menu" id="site-navigation">
             <a href="menu.html">Menu</a>
             <a href="locations.html">Locations</a>
             <a href="membership.html">Reserve Table</a>
@@ -31,51 +31,149 @@
         </nav>
     </header>
 
+    <script>
+        const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+
+        hamMenu.addEventListener('click', () => {
+            const isActive = hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+            hamMenu.setAttribute('aria-expanded', isActive);
+            hamMenu.setAttribute('aria-label', isActive ? 'Close navigation menu' : 'Open navigation menu');
+            document.body.classList.toggle('menu-open', isActive);
+        });
+
+        offScreenMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                hamMenu.classList.remove('active');
+                offScreenMenu.classList.remove('active');
+                hamMenu.setAttribute('aria-expanded', 'false');
+                hamMenu.setAttribute('aria-label', 'Open navigation menu');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    </script>
+
     <main>
-        <h1 class="section-title">Get in Touch</h1>
+        <section class="contact-hero">
+            <div class="contact-hero-copy">
+                <p class="contact-eyebrow">Contact Arvane</p>
+                <h1 class="section-title">Let’s make your next visit feel personal.</h1>
+                <p class="contact-intro">
+                    Whether you are planning a coffee date, asking about a reservation, or just want to say hello,
+                    our team is here to make it easy.
+                </p>
+
+                <div class="contact-highlights">
+                    <div class="highlight-pill">
+                        <span>Fast replies</span>
+                        <strong>Within 24 hours</strong>
+                    </div>
+                    <div class="highlight-pill">
+                        <span>Support hours</span>
+                        <strong>Mon-Sat, 8AM-8PM</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-hero-note">
+                <p>Reservations, catering questions, private events, membership support, and feedback all start here.</p>
+            </div>
+        </section>
+
         <div class="contact-wrapper">
-            <section class="contact-form">
-                <form action="#">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input required type="text" id="name" placeholder="Enter your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input required type="email" id="email" placeholder="Enter your email">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea required id="message" rows="5" placeholder="Your message..."></textarea>
-                    </div>
-                    <button type="submit" class="contact-btn">Send Message</button>
-                </form>
-            </section>
             <aside class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h3>Our Office</h3>
-                        <p>1287 Maplewood Drive, Austin, TX 78701</p>
+                <div class="info-card">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Our Flagship Cafe</h3>
+                            <p>1287 Maplewood Drive, Austin, TX 78701</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+1 (395) 701-891</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@arvane.com</p>
+                        </div>
                     </div>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+1 (395) 701-891</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h3>Email</h3>
-                        <p>Arvane@gmail.com</p>
-                    </div>
+
+                <div class="contact-side-panel">
+                    <h2>Why guests reach out</h2>
+                    <ul class="contact-reasons">
+                        <li>Reserve a table for a relaxed coffee meet-up</li>
+                        <li>Ask about pastries, catering, or private events</li>
+                        <li>Share feedback about your latest Arvane visit</li>
+                    </ul>
                 </div>
             </aside>
+
+            <section class="contact-form">
+                <div class="form-shell">
+                    <div class="form-heading">
+                        <p class="contact-eyebrow">Send A Message</p>
+                        <h2>Tell us what you need.</h2>
+                    </div>
+
+                    <form action="#">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input required type="text" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input required type="email" id="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic">What can we help with?</label>
+                            <select id="topic" required>
+                                <option value="" selected disabled>Select a topic</option>
+                                <option value="reservation">Reservation inquiry</option>
+                                <option value="event">Private event or catering</option>
+                                <option value="membership">Membership support</option>
+                                <option value="feedback">Share feedback</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea required id="message" rows="6" placeholder="Tell us a bit about what you need..."></textarea>
+                        </div>
+
+                        <div class="form-footer">
+                            <p>We usually respond within one business day.</p>
+                            <button type="submit" class="contact-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
     </main>
+
+    <script>
+        const contactForm = document.querySelector('.contact-form form');
+        const contactButton = document.querySelector('.contact-btn');
+
+        if (contactForm && contactButton) {
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                alert("Okay. Your message was delivered.");
+            });
+        }
+    </script>
+
 
     <footer>
         <div class="bottom-SEO">
