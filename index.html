@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvane | Home</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--socials-->
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+
+        <button class="ham-menu" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="off-screen-menu" id="site-navigation">
+            <a href="menu.html">Menu</a>
+            <a href="locations.html">Locations</a>
+            <a href="membership.html">Reserve Table</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <script>
+        const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+
+        hamMenu.addEventListener('click', () => {
+            const isActive = hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+            hamMenu.setAttribute('aria-expanded', isActive);
+            hamMenu.setAttribute('aria-label', isActive ? 'Close navigation menu' : 'Open navigation menu');
+            document.body.classList.toggle('menu-open', isActive);
+        });
+
+        offScreenMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                hamMenu.classList.remove('active');
+                offScreenMenu.classList.remove('active');
+                hamMenu.setAttribute('aria-expanded', 'false');
+                hamMenu.setAttribute('aria-label', 'Open navigation menu');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    </script>
+
+    <section class="hero">
+        <video src="images/hero-video.mp4" autoplay muted loop width="100%"></video>
+        <div class="overlay">
+            <div class="hero-overlay-text">
+                <h1>Craft Coffee. Thoughtful Food.</h1>
+                <h3>Fresh coffee, warm pastries, and a calm place to think.</h3>
+                <div class="hero-btn">
+                    <a href="menu.html"><button>Start An Order</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="featured-products-inner content-container">
+            <div class="section-heading">
+                <span class="eyebrow">Guest Favorites</span>
+                <h2>Featured Best Sellers</h2>
+                <p>Our most-loved picks, from smooth espresso drinks to warm cafe staples.</p>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card latte-card">
+                    <img src="images/latte.jpeg" alt="Cafe latte in a ceramic cup">
+                    <div class="product-copy">
+                        <h3>Signature Latte</h3>
+                        <p>Our smooth espresso classic with silky steamed milk and delicate latte art.</p>
+                    </div>
+                </article>
+
+                <article class="product-card espresso-card">
+                    <img src="images/double-espresso.jpeg" alt="Double espresso served in a small cup">
+                    <div class="product-copy">
+                        <h3>Double Espresso</h3>
+                        <p>Bold, concentrated, and full-bodied for guests who love their coffee intense and clean.</p>
+                    </div>
+                </article>
+
+                <article class="product-card cold-brew-card">
+                    <img src="images/cold-brew.jpeg" alt="Cold brew coffee served over ice">
+                    <div class="product-copy">
+                        <h3>Cold Brew</h3>
+                        <p>Slow-steeped for hours to create a smooth, bold coffee with a crisp refreshing finish.</p>
+                    </div>
+                </article>
+
+                <article class="product-card croissant-card">
+                    <img src="images/chocolate-croissant.jpeg" alt="Fresh baked chocolate croissant">
+                    <div class="product-copy">
+                        <h3>Chocolate Croissant</h3>
+                        <p>Buttery layers, crisp edges, and rich melted chocolate make this a daily favorite.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose-us content-container">
+        <h2>Why Choose Arvane?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <img src="images/roasted-beans.jpg" alt="roasted beans">
+                <h3>Freshly Roasted</h3>
+                <p>Beans roasted weekly to guarantee peak freshness and flavor.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/chocolate.jpg" alt="chocolate">
+                <h3>Zero Artificial Flavors</h3>
+                <p>High-quality milk, real chocolate, and natural vanilla.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/barista.jpg" alt="barista">
+                <h3>Expert Baristas</h3>
+                <p>Skilled professionals trained to craft the perfect cup.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/relaxing.jpg" alt=" woman relaxing in cafe">
+                <h3>Relaxing Atmosphere</h3>
+                <p>Designed to help you focus, relax, or meet with friends.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="carousel-container">
+            <div class="track">
+                <div class="testimonial-box">
+                    <p>
+                        "Great coffee, quick service, and a calm atmosphere. 
+                        It’s a reliable place to relax or get work done without distractions."
+                    </p>
+                    <span class="name">— Michael Carter</span>
+                </div>
+                <div class="testimonial-box">
+                    <p>
+                        “What stands out most is the consistency across locations. Whether it’s a busy morning or a slower afternoon,
+                        the service remains smooth and professional. The food tastes fresh, 
+                        the coffee is excellent, and the overall experience always feels reliable.”
+                    </p>
+                    <span class="name">— Emily Johnson</span>
+                </div>
+                <div class="testimonial-box">
+                    <p>
+                        “I’ve visited multiple locations, and the experience is always consistent. 
+                        The coffee is rich, the food is fresh, and the staff are attentive without being intrusive.”
+                    </p>
+                    <span class="name">— Sarah Mitchell</span>
+                </div>
+                <div class="testimonial-box">
+                    <p>
+                        “The café strikes a perfect balance between quality and comfort. 
+                        The design feels modern yet welcoming, and the menu is clearly well thought out. 
+                        It’s become a regular spot for both meetings and quiet time.”
+                    </p>
+                    <span class="name">— Daniel Brooks</span>
+                </div>
+                <div class="testimonial-box">
+                    <p>
+                        “I’ve started coming here regularly because it’s dependable. The menu has enough variety without being overwhelming, 
+                        and everything I’ve tried has been well prepared. It’s a solid choice for any time of day.”
+                    </p>
+                    <span class="name">— Olivia Parker</span>
+                </div>
+                <div class="testimonial-box">
+                    <p>
+                        “I appreciate how consistent everything is. The service is quick without feeling rushed, 
+                        and the overall atmosphere makes it easy to focus or just take a break.”
+                    </p>
+                    <span class="name">— Ryan Thompson</span>
+                </div>
+                <div class="testimonial-box">
+                    <p>
+                        “Really impressed by the quality here. The coffee is smooth, the food tastes fresh, 
+                        and the space is comfortable enough to stay longer than planned.”
+                    </p>
+                    <span class="name">— Jason Miller</span>
+                </div>
+                <div class="testimonial-box" aria-hidden="true">
+                    <p>
+                        "Great coffee, quick service, and a calm atmosphere. 
+                        It’s a reliable place to relax or get work done without distractions."
+                    </p>
+                    <span class="name">— Michael Carter</span>
+                </div>
+                <div class="testimonial-box" aria-hidden="true">
+                    <p>
+                        “What stands out most is the consistency across locations. Whether it’s a busy morning or a slower afternoon,
+                        the service remains smooth and professional. The food tastes fresh, 
+                        the coffee is excellent, and the overall experience always feels reliable.”
+                    </p>
+                    <span class="name">— Emily Johnson</span>
+                </div>
+                <div class="testimonial-box" aria-hidden="true">
+                    <p>
+                        “I’ve visited multiple locations, and the experience is always consistent. 
+                        The coffee is rich, the food is fresh, and the staff are attentive without being intrusive.”
+                    </p>
+                    <span class="name">— Sarah Mitchell</span>
+                </div>
+                <div class="testimonial-box" aria-hidden="true">
+                    <p>
+                        “The café strikes a perfect balance between quality and comfort. 
+                        The design feels modern yet welcoming, and the menu is clearly well thought out. 
+                        It’s become a regular spot for both meetings and quiet time.”
+                    </p>
+                    <span class="name">— Daniel Brooks</span>
+                </div>
+                <div class="testimonial-box" aria-hidden="true">
+                    <p>
+                        “I’ve started coming here regularly because it’s dependable. The menu has enough variety without being overwhelming, 
+                        and everything I’ve tried has been well prepared. It’s a solid choice for any time of day.”
+                    </p>
+                    <span class="name">— Olivia Parker</span>
+                </div>
+                <div class="testimonial-box" aria-hidden="true">
+                    <p>
+                        “I appreciate how consistent everything is. The service is quick without feeling rushed, 
+                        and the overall atmosphere makes it easy to focus or just take a break.”
+                    </p>
+                    <span class="name">— Ryan Thompson</span>
+                </div>
+                <div class="testimonial-box" aria-hidden="true">
+                    <p>
+                        “Really impressed by the quality here. The coffee is smooth, the food tastes fresh, 
+                        and the space is comfortable enough to stay longer than planned.”
+                    </p>
+                    <span class="name">— Jason Miller</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="membership">
+        <div class="membership-inner content-container">
+            <div class="membership-copy">
+                <span class="eyebrow">Arvane Membership</span>
+                <h2>Make Your Daily Coffee Ritual More Rewarding.</h2>
+                <p>
+                    Join the Arvane membership to collect points, unlock member-only perks,
+                    and enjoy thoughtful extras every time you stop by.
+                </p>
+
+                <div class="membership-benefits">
+                    <div class="benefit-item">
+                        <strong>Earn On Every Visit</strong>
+                        <span>Collect points on drinks, pastries, and cafe favorites.</span>
+                    </div>
+                    <div class="benefit-item">
+                        <strong>Birthday Treats</strong>
+                        <span>Celebrate with a complimentary reward during your birthday month.</span>
+                    </div>
+                    <div class="benefit-item">
+                        <strong>Early Access</strong>
+                        <span>Be first in line for seasonal drinks and exclusive offers.</span>
+                    </div>
+                </div>
+
+                <div class="membership-actions">
+                    <a href="membership.html" class="membership-btn primary-btn">Join Membership</a>
+                    <a href="menu.html" class="membership-btn secondary-btn">See The Menu</a>
+                </div>
+            </div>
+
+            <div class="membership-card">
+                <span class="card-tag">Member Favorite</span>
+                <h3>The Everyday Perks Card</h3>
+                <p>Built for regulars who want their coffee habit to feel a little more special.</p>
+                <ul>
+                    <li>Points toward free drinks</li>
+                    <li>Monthly member-only offers</li>
+                    <li>Faster checkout experience</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations-home">
+        <div class="locations-home-inner content-container">
+            <div class="locations-copy">
+                <span class="eyebrow">Visit Arvane</span>
+                <h2>Find Your Nearest Cafe</h2>
+                <p>Easy to reach, comfortable to stay in, and open for your daily coffee ritual.</p>
+                <a href="locations.html" class="locations-btn">Find a Location</a>
+            </div>
+
+            <div class="locations-table-wrap">
+                <table class="locations-table">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Address</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Downtown</td>
+                            <td>148 West Maple Avenue, Chicago, IL</td>
+                            <td>Sun - Thu: 7:00 AM - 9:00 PM<br>Fri - Sat: 8:00 AM - 11:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>SoHo</td>
+                            <td>214 Spring Street, New York, NY</td>
+                            <td>Sun - Thu: 7:30 AM - 8:30 PM<br>Fri - Sat: 8:30 AM - 10:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td>South Congress</td>
+                            <td>1710 South Congress Avenue, Austin, TX</td>
+                            <td>Sun - Thu: 7:00 AM - 9:30 PM<br>Fri - Sat: 8:00 AM - 11:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bottom-SEO">
+            <div class="footer-logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" height="80px"></a>
+            </div>
+            <div class="footer-container">
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="" class="nav-link">Reserve Table</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="" class="nav-link">Gift Cards</a>
+            </div>
+            <div class="footer-container">
+                <a href="joinTeam.html" class="nav-link">Deliveries</a>
+                <a href="" class="nav-link">Events</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+            </div>
+            <div class="footer-container">
+                <a href="" class="nav-link">Refund Policy</a>
+                <a href="" class="nav-link">Site Map</a>
+                <a href="" class="nav-link">Accessibility</a>
+                <a href="" class="nav-link">Terms & Privacy</a>
+            </div>
+            <div class="footer-container">
+                <a href="" class="nav-link">Join Our Team</a>
+                <a href="contactUs.html" class="nav-link">Contact us</a>
+                 <!--whatsapp--> 
+                <a href="https://wa.me/972507331829?text=Hi%20I%20would%20like%20to%20order%20a%20coffee" target="_blank" class="whatsapp-icon">
+                    <span>Customer Service</span>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <!-- <a class="nav-link">Follow us:</a> -->
+
+                <div class="follow-icons">
+                    <a href="https://facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://tiktok.com/" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <span class="footer-separator"></span>
+        <p>&copy; 2026 Arvane Café. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
+
+
+<!-- on the side put an accessbility button-->
+<!-- <header>        → Navbar
+<section>       → Hero
+<section>       → Featured Products
+<section>       → Why We're Different
+<section>       → Subscription
+<section>       → Testimonials
+<section>       → Locations (optional)
+<footer>        → Footer -->
