@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Locations | Arvane</title>
     <link rel="stylesheet" href="locations.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     
@@ -15,19 +17,110 @@
             </a>
         </div>
 
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
 
-        <nav class="off-screen-menu">
+        <nav class="off-screen-menu" id="site-navigation">
             <a href="menu.html">Menu</a>
             <a href="locations.html">Locations</a>
             <a href="membership.html">Reserve Table</a>
             <a href="contactUs.html">Contact Us</a>
         </nav>
     </header>
+
+    <script>
+        const hamMenu = document.querySelector('.ham-menu');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+
+        hamMenu.addEventListener('click', () => {
+            const isActive = hamMenu.classList.toggle('active');
+            offScreenMenu.classList.toggle('active');
+            hamMenu.setAttribute('aria-expanded', isActive);
+            hamMenu.setAttribute('aria-label', isActive ? 'Close navigation menu' : 'Open navigation menu');
+            document.body.classList.toggle('menu-open', isActive);
+        });
+
+        offScreenMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                hamMenu.classList.remove('active');
+                offScreenMenu.classList.remove('active');
+                hamMenu.setAttribute('aria-expanded', 'false');
+                hamMenu.setAttribute('aria-label', 'Open navigation menu');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    </script>
+
+    <main>
+        <section class="locations-showcase">
+            <div class="locations-sidebar">
+                <div class="locations-preview-panel">
+                    <div class="locations-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="Find location">
+                    </div>
+
+                    <div class="locations-preview-list">
+                    <article class="location-preview-item">
+                        <div class="location-preview-copy">
+                            <div class="location-tag-row">
+                                <span class="location-tag">Flagship</span>
+                                <span class="location-tag muted">Fast-Paced</span>
+                            </div>
+                            <h2>Maplewood Downtown</h2>
+                            <p class="location-address">1287 Maplewood Drive, Austin, TX 78701</p>
+                            <p>Best for quick coffee runs, work sessions, and downtown meetings.</p>
+                        </div>
+                        <a href="#locations-map" class="location-link">View Map</a>
+                    </article>
+
+                    <article class="location-preview-item">
+                        <div class="location-preview-copy">
+                            <div class="location-tag-row">
+                                <span class="location-tag">Neighborhood</span>
+                                <span class="location-tag muted">Quiet Corners</span>
+                            </div>
+                            <h2>Riverside Commons</h2>
+                            <p class="location-address">42 Brookline Avenue, Austin, TX 78704</p>
+                            <p>Best for reading breaks, patio coffee, and a slower afternoon rhythm.</p>
+                        </div>
+                        <a href="#locations-map" class="location-link">View Map</a>
+                    </article>
+
+                    <article class="location-preview-item">
+                        <div class="location-preview-copy">
+                            <div class="location-tag-row">
+                                <span class="location-tag">Brunch Spot</span>
+                                <span class="location-tag muted">Weekend Favorite</span>
+                            </div>
+                            <h2>North Market House</h2>
+                            <p class="location-address">761 Cedar Lane, Austin, TX 78757</p>
+                            <p>Best for group brunches, longer stays, and family-friendly seating.</p>
+                        </div>
+                        <a href="#locations-map" class="location-link">View Map</a>
+                    </article>
+                </div>
+                </div>
+            </div>
+
+            <div class="locations-map-panel" id="locations-map">
+                <div class="map-card">
+                    <div class="map-frame">
+                        <iframe
+                            title="Arvane locations map"
+                            src="https://www.google.com/maps?q=Austin,Texas&z=11&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <div class="bottom-SEO">
