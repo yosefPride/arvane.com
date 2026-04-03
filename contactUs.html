@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
 </head>
 <body class="contact-page">
 
@@ -26,33 +27,10 @@
         <nav class="off-screen-menu" id="site-navigation">
             <a href="menu.html">Menu</a>
             <a href="locations.html">Locations</a>
-            <a href="membership.html">Reserve Table</a>
+            <a href="reserveTable.html">Reserve Table</a>
             <a href="contactUs.html">Contact Us</a>
         </nav>
     </header>
-
-    <script>
-        const hamMenu = document.querySelector('.ham-menu');
-        const offScreenMenu = document.querySelector('.off-screen-menu');
-
-        hamMenu.addEventListener('click', () => {
-            const isActive = hamMenu.classList.toggle('active');
-            offScreenMenu.classList.toggle('active');
-            hamMenu.setAttribute('aria-expanded', isActive);
-            hamMenu.setAttribute('aria-label', isActive ? 'Close navigation menu' : 'Open navigation menu');
-            document.body.classList.toggle('menu-open', isActive);
-        });
-
-        offScreenMenu.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', () => {
-                hamMenu.classList.remove('active');
-                offScreenMenu.classList.remove('active');
-                hamMenu.setAttribute('aria-expanded', 'false');
-                hamMenu.setAttribute('aria-label', 'Open navigation menu');
-                document.body.classList.remove('menu-open');
-            });
-        });
-    </script>
 
     <main>
         <section class="contact-hero">
@@ -151,19 +129,6 @@
             </aside>
         </div>
     </main>
-
-    <script>
-        const contactForm = document.querySelector('.contact-form form');
-        const contactButton = document.querySelector('.contact-btn');
-
-        if (contactForm && contactButton) {
-            contactForm.addEventListener('submit', (event) => {
-                event.preventDefault();
-                alert("Okay. Your message was delivered.");
-            });
-        }
-    </script>
-
 
     <footer>
         <div class="bottom-SEO">

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership | Arvane</title>
-    <link rel="stylesheet" href="membership.css">
+    <title>Arvane | Reserve Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reserveTable.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     
@@ -15,19 +17,33 @@
             </a>
         </div>
 
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
 
-        <nav class="off-screen-menu">
+        <nav class="off-screen-menu" id="site-navigation">
             <a href="menu.html">Menu</a>
             <a href="locations.html">Locations</a>
-            <a href="membership.html">Reserve Table</a>
+            <a href="reserveTable.html">Reserve Table</a>
             <a href="contactUs.html">Contact Us</a>
         </nav>
     </header>
+
+    <main>
+        <section class="reservation-hero">
+
+        </section>
+        <section class="reservation-form">
+                <form action="">
+                <label for="dateInput">Pick A Date</label>
+                <input type="date" id="dateInput"> <!--date limit handeled by Js.-->
+            </form>
+        </section>
+    </main>
+
+    
 
     <footer>
         <div class="bottom-SEO">

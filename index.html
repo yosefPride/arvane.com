@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Arvane" content="Cafe blah blah. will get to this later.">
     <title>Arvane | Home</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--socials-->
+    <script src="index.js" defer></script>
 </head>
 <body>
     
@@ -25,33 +27,10 @@
         <nav class="off-screen-menu" id="site-navigation">
             <a href="menu.html">Menu</a>
             <a href="locations.html">Locations</a>
-            <a href="membership.html">Reserve Table</a>
+            <a href="reserveTable.html">Reserve Table</a>
             <a href="contactUs.html">Contact Us</a>
         </nav>
     </header>
-
-    <script>
-        const hamMenu = document.querySelector('.ham-menu');
-        const offScreenMenu = document.querySelector('.off-screen-menu');
-
-        hamMenu.addEventListener('click', () => {
-            const isActive = hamMenu.classList.toggle('active');
-            offScreenMenu.classList.toggle('active');
-            hamMenu.setAttribute('aria-expanded', isActive);
-            hamMenu.setAttribute('aria-label', isActive ? 'Close navigation menu' : 'Open navigation menu');
-            document.body.classList.toggle('menu-open', isActive);
-        });
-
-        offScreenMenu.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', () => {
-                hamMenu.classList.remove('active');
-                offScreenMenu.classList.remove('active');
-                hamMenu.setAttribute('aria-expanded', 'false');
-                hamMenu.setAttribute('aria-label', 'Open navigation menu');
-                document.body.classList.remove('menu-open');
-            });
-        });
-    </script>
 
     <section class="hero">
         <video src="images/hero-video.mp4" autoplay muted loop width="100%"></video>
