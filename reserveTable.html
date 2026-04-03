@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arvane | Reserve Table</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reserveTable.css">
     <script src="index.js" defer></script>
@@ -33,17 +34,77 @@
 
     <main>
         <section class="reservation-hero">
-
+            <div class="reservation-hero-content">
+                <p class="reservation-eyebrow">Reserve Your Spot</p>
+                <h1>Set the Table for a Slow, Beautiful Moment</h1>
+                <p>
+                    Morning coffee date, weekend brunch, or an intimate dinner,
+                    book your table and we will have everything ready for you.
+                </p>
+            </div>
         </section>
+        
         <section class="reservation-form">
-                <form action="">
-                <label for="dateInput">Pick A Date</label>
-                <input type="date" id="dateInput"> <!--date limit handeled by Js.-->
-            </form>
+            <div class="form-container">
+                <div class="form-shell">
+                    <div class="form-copy">
+                        <p class="reservation-eyebrow">Booking Details</p>
+                        <h2>Reserve in a few simple steps</h2>
+                        <p>
+                            Share your details, choose your date and time, and
+                            let us know if there is anything special we should
+                            prepare for your visit.
+                        </p>
+                    </div>
+
+                    <form class="booking-form" action="">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full-name" id="full-name" placeholder="Jane Smith">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone-number" id="phone-number" placeholder="+1 555 123 4567">
+                        </div>
+
+                        <div class="form-row guest-row">
+                            <div class="form-group">
+                                <label for="adults">Adults</label>
+                                <input type="number" name="adults" id="adults" min="1" max="20" step="1" value="2">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="kids">Kids</label>
+                                <input type="number" name="kids" id="kids" min="0" max="8" step="1" value="0">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dateInput">Pick A Date</label>
+                                <input type="date" id="dateInput"> <!--date limit handeled by Js.-->
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <input type="time" name="time" id="time">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comment">Comment or Special Request</label>
+                            <textarea name="comment" id="comment" placeholder="Birthday candles, a quiet corner, stroller space, allergies..."></textarea>
+                        </div>
+
+                        <button class="reserve-btn" type="submit">Book Your Table</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    
+
 
     <footer>
         <div class="bottom-SEO">
