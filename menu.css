@@ -1,0 +1,121 @@
+/*beginning of menu page*/
+/*beginning of choose category*/
+.menu-container {
+    height: 30vh;
+    /* width: 90vw; */
+    /* margin-left: 5vw; */
+    display: flex;
+    justify-content: space-evenly; 
+    align-content: center;
+    flex-wrap: wrap; 
+    background-color: #ede6df;  
+
+    a {
+        font-size: clamp(16px, 2vw, 25px);
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: #4d4941;
+    }
+}
+
+/* beginning of menu sections  */
+.category.active {
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #2a1915;
+}
+
+.category {
+    display: none;
+}
+
+.menu-items {
+    display: flex;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    justify-content: space-evenly;
+}
+
+.item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.item {
+    width: 20vw;
+    /* background-color: #ede6df; */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border: 2px solid#837572;
+}
+
+.item:hover {
+    transition: all 0.3s;
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+.item button {
+    align-self: center; /* centers the button instead of stretching */
+    width: auto; /* prevent full-width */
+    margin-top: auto;
+    background-color: #2a1915;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 6px;
+}
+
+.item button:hover {
+    font-weight: bold;
+}
+
+.item p {
+    margin: 0 5%;
+    flex-grow: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+}
+
+.price {
+    color: rgb(175, 134, 23);
+    font-size: clamp(15px, 2vw, 20px);
+}
+
+.drink-category-h3 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+/*end of the menu sections*/
+
+.undecided-yet {
+    height: 30vh;
+    background-color: #ede6df;
+}
+
+.separator {
+    content: "";              /* Needed to display the line */
+    display: block;           /* Make it appear as a block below the text */
+    width: 100%;             /* Length of the line */
+    height: 1px;              /* Thickness of the line */
+    background-color: #8b8b8c; 
+}
+/*end of menu page*/
