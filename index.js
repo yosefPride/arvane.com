@@ -40,3 +40,13 @@ if (contactForm && contactButton) {
         alert("Okay. Your message was delivered.");
     });
 } //THIS CODE ISN'T WORKING!!!!!!!
+
+//reveals sections in menu page.
+function showSection(id) {
+// Hide all sections
+const sections = document.querySelectorAll('.category');
+sections.forEach(sec => sec.classList.remove('active'));
+
+// Show the requested section
+document.getElementById(id).classList.add('active');
+}
