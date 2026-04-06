@@ -42,11 +42,9 @@ body.menu-open {
 
 header {
     width: 100%;
-    /* height: max(15vh); */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 1rem; */
     padding: clamp(1rem, 4vw, 2rem);
     background: linear-gradient(180deg, #2a1c17, #1a120f);
     position: relative;
@@ -58,7 +56,6 @@ header .logo img {
     height: clamp(40px, 6vh, 80px);
     width: auto;
 }
-
 
 /* Hamburger menu */
 .ham-menu {

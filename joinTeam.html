@@ -6,11 +6,11 @@
     <title>Join Our Team | Arvane</title>
     <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="joinTeam.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
     <script src="index.js" defer></script>
 </head>
 <body>
-    <a href="index.html">home</a>
-
     <header>
         <div class="logo">
             <a href="index.html">
@@ -18,19 +18,100 @@
             </a>
         </div>
 
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
 
-        <nav class="off-screen-menu">
+        <nav class="off-screen-menu" id="site-navigation">
             <a href="menu.html">Menu</a>
             <a href="locations.html">Locations</a>
-            <a href="membership.html">Reserve Table</a>
+            <a href="reserveTable.html">Reserve Table</a>
             <a href="contactUs.html">Contact Us</a>
         </nav>
     </header>
+
+    <main>
+        <section class="join-hero">
+            <div class="join-hero-shell content-container">
+                <div class="join-hero-copy">
+                    <p class="join-eyebrow">CAREERS</p>
+                    <h1>Careers At Arvane</h1>
+                    <p class="join-intro">
+                        We are looking for kind, curious people who love hospitality,
+                        thoughtful details, and creating a cafe experience guests remember.
+                    </p>
+                </div>
+
+                <div class="join-hero-panel">
+                    <div class="role-list">
+                        <div class="role-item">
+                            <img src="images/barista-role.jpg" alt="barista">
+                            <div class="role-item-text">
+                                <h2>Barista</h2>
+                                <p>Coffee craft, guest connection, and smooth service.</p>
+                                <a href="">LEARN MORE</a>
+                            </div>
+                        </div>
+                        <div class="role-item">
+                            <img src="images/contact-hero.jpg" alt="waitress">
+                            <div class="role-item-text">
+                                <h2>Floor Team</h2>
+                                <p>Warm welcomes, attentive table care, and great pacing.</p>
+                                <a href="">LEARN MORE</a>
+                            </div>
+                        </div>
+                        <div class="role-item">
+                            <img src="images/kitchen-support.jpg" alt="cafe kitchen">
+                            <div class="role-item-text">
+                                <h2>Kitchen Support</h2>
+                                <p>Quality prep, precise timing, and calm, coordinated teamwork.</p>
+                                <a href="">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="questions content-container">
+                <p class="join-eyebrow faq-eyebrow">FAQ</p>
+                <h2 class="qa-text">Frequently Asked Questions</h2>
+                <div class="qa-item">
+                    <div class="qa-row">
+                        <p>Do I need previous cafe experience to apply?</p>
+                        <button class="toggleBtn">&#8964;</button>
+                    </div>
+                    <div class="slide-container">
+                        <p>Not always. For some roles, a warm attitude, reliability, and willingness to learn matter more than direct experience.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="qa-item">
+                    <div class="qa-row">
+                        <p>What kind of availability are you looking for?</p>
+                        <button class="toggleBtn">&#8964;</button>
+                    </div>
+                    <div class="slide-container">
+                        <p>We look for flexible availability, especially during mornings, weekends, and peak cafe hours, but we are happy to discuss scheduling.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="qa-item">
+                    <div class="qa-row">
+                        <p>What happens after I submit my application?</p>
+                        <button class="toggleBtn">&#8964;</button>
+                    </div>
+                    <div class="slide-container">
+                        <p>If your application feels like a strong fit, our team will reach out to schedule a conversation and talk through next steps.</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="bottom-SEO">

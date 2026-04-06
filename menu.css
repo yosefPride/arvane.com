@@ -16,6 +16,7 @@
     --accent-gold: #c9a27c;
     --accent-gold-deep: #a97d58;
     --border-soft: rgba(120, 89, 69, 0.14);
+    --eyebrow: #efd2b1;
 }
 
 body {
@@ -100,7 +101,7 @@ body {
 
 .deal-eyebrow {
     margin: 0;
-    color: #efd2b1;
+    color: var(--eyebrow);
     font-size: 0.76rem;
     font-weight: 700;
     letter-spacing: 0.22em;

@@ -1,182 +1,238 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --primary-color: #241814;
+    --secondary-color: #3a2720;
+    --accent-color: #d6b48f;
+    --bg-dark: #1a120f;
+    --bg-dark-soft: #261a16;
+    --bg-light: #faf6f0;
+    --bg-light-warm: #f2e8dc;
+    --bg-light-soft: #efe4d6;
+    --surface-light: #fffaf4;
+    --surface-mid: #f5ede3;
+    --text-strong: #2c1d17;
+    --text-body: #6f584a;
+    --text-inverse: #f5ece3;
+    --text-inverse-soft: rgba(245, 236, 227, 0.82);
+    --accent-gold: #c9a27c;
+    --accent-gold-deep: #a97d58;
+    --border-soft: rgba(120, 89, 69, 0.14);
+    --eyebrow: #efd2b1;
+
+}
+
+body {
+    background-color: var(--bg-light-warm);
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 
-header {
-    width: 100vw;
-    height: max(15vh);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 clamp(1rem, 4vw, 3rem);
-    background-color: #1d100d;
-    position: relative;
-    z-index: 1000;
+.join-hero {
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(33, 23, 18, 0.97), rgba(67, 44, 33, 0.92)),
+        radial-gradient(circle at top right, rgba(214, 180, 143, 0.22), transparent 34%);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-block: clamp(2rem, 4vw, 3rem);
+
 }
 
-/* Logo */
-header .logo img {
-    height: clamp(40px, 6vh, 80px);
-    width: auto;
+.join-hero-copy {
+    display: grid;
+    gap: clamp(0.75rem, 1.4vw, 1rem);
+    align-content: end;
+    width: min(100%, 52rem);
+    padding: 0 1rem;
+    border-radius: 0;
+    backdrop-filter: none;
 }
 
-/* Hamburger menu */
-.ham-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: clamp(35px, 5vw, 50px);
-    height: clamp(25px, 3vh, 50px);
-    cursor: pointer;
-    position: relative;
-    z-index: 1100; /* above off-screen menu */
+.join-eyebrow {
+    margin: 0;
+    color: var(--eyebrow);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
 }
 
-.ham-menu span {
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: white;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    line-height: 1;
+    color: #fff7ef;
+    overflow: hidden;
 }
 
-/* Hamburger active state (X) */
-.ham-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 10px);
-}
-
-.ham-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.ham-menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -10px);
-}
-
-/* Off-screen menu */
-.off-screen-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: min(90%, 400px);
-    height: 100vh;
-    background-color: rgba(29,16,13,0.9);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    transition: right 0.3s ease;
-    z-index: 1050; /* below hamburger but above content */
-    padding: 0 2rem;
-}
-
-.off-screen-menu a {
-    color: white;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.off-screen-menu a:hover {
-    color: #6d6969;
-}
-
-.off-screen-menu.active {
-    right: 0;
-}
-
-/* Responsive tweaks */
-@media (min-width: 768px) {
-    /* optional: hide hamburger on larger screens */
-    .ham-menu {
-        display: none;
-    }
+.join-intro {
+    max-width: 42rem;
+    margin: 0;
+    color: rgba(255, 246, 237, 0.92);
+    font-size: clamp(0.95rem, 1.8vw, 1.02rem);
+    line-height: 1.55;
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     
-    .off-screen-menu {
-        position: static;
-        flex-direction: row;
-        height: auto;
-        width: auto;
-        background: transparent;
-        gap: clamp(1rem, 2vw, 3rem);
-        padding: 0;
-        right: 0;
-    }
+}
 
-    .off-screen-menu a {
-        font-size: clamp(1rem, 1.5vw, 1.5rem);
+.role-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem);
+    padding-top: 2rem;
+    padding-inline: 1rem;
+}
+
+.role-item {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: var(--text-inverse);
+    text-align: start;
+    overflow: hidden;
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.role-item-text {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    .role-list {
+        grid-template-columns: 1fr;
     }
 }
-/* end of header/nav-bar */
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #1d100d;
-    width: 100vw;
-    color: white;
+.role-item-text h2 {
+    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+    color: #fff7ef;
+}
 
-    .bottom-SEO {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        column-gap: 50px; 
-        padding: 5vw;
+.role-item-text p {
+    margin-top: 0.5rem;
+    color: var(--text-inverse-soft);
+    flex-grow: 1;
+}
 
-        .footer-container {
-            display: flex;
-            flex-direction: column;
-            padding-left: 50px;
-            padding-right: 50px;
+.role-item-text a {
+    padding: 0.8rem 0;
+    color: var(--surface-mid);
+    font-size: clamp(0.5rem, 0.8rem, 1rem);
+    font-weight: 900;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
 
-            .nav-link {
-                margin-top: 20px;
-                font-size: 20px;
-                text-decoration: none;
-                color: white;
-            }
+.role-item img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 4 / 2.5;
+    display: block;
+}
 
-            .whatsapp-icon {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                margin-top: 20px;
-                font-size: 20px;
-                text-decoration: none;
-                color: white;
-            }
+.join-hero::after,
+.join-hero::before {
+    content: "";
+    position: absolute;
+    border-radius: 999px;
+    pointer-events: none;
+}
 
-            .follow-icons {
-                margin-top: 20px;
-                display: flex;
-                gap: 20px;
-                align-items: center;
-            }
+.join-hero::before {
+    width: 20rem;
+    height: 20rem;
+    top: -3rem;
+    right: -2rem;
+    background: radial-gradient(circle, rgba(255, 245, 232, 0.22), rgba(255, 245, 232, 0));
+    z-index: 0;
+}
 
-            .follow-icons a {
-                color: white;
-            }
-        }
-    }
+.join-hero::after {
+    width: 10rem;
+    height: 10rem;
+    bottom: -4rem;
+    left: -4rem;
+    background: radial-gradient(circle, rgba(201, 162, 124, 0.2), rgba(201, 162, 124, 0));
+    z-index: 0;
+}
+/*end of hero section*/
 
-    .footer-separator {
-        content: "";              /* Needed to display the line */
-        display: block;           /* Make it appear as a block below the text */
-        width: 100%;             /* Length of the line */
-        height: 1px;              /* Thickness of the line */
-        background-color: #8b8b8c; 
-    }
+/*FAQ*/
+#faq {
+    padding: 3rem 0;
+}
 
-    p {
-        width: 100%;
-        text-align: center;
-        font-size: 1.2rem;
-        padding: 20px;
-    }
+.faq-eyebrow {
+    color: var(--accent-gold-deep);
+}
+
+/* FAQ Header */
+.qa-text {
+  width: 100vw;
+  font-size: 24px;
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+
+}
+
+/* FAQ container */
+.questions {
+  padding: 2rem;
+  font-size: 20px;
+}
+
+/* Each QA item */
+.qa-item {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Question + button row */
+.qa-row {
+  display: flex;
+  justify-content: space-between; /* question left, button right */
+  align-items: center;
+}
+
+.qa-row p {
+  margin: 0;
+  flex: 1; /* question takes available space */
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+/* Toggle button */
+.toggleBtn {
+  background-color: transparent;
+  border: none;   
+  border-radius: 50%;    
+  color: var(--text-strong);
+  font-size: 30px;
+  cursor: pointer;
+  width: 2.5rem;       
+  text-align: center; 
+  padding: 0;
+  margin: 0;
+}
+
+.toggleBtn:hover {
+  font-weight: bold;
+}
+
+/* Sliding content */
+.slide-container {
+  max-height: 0; 
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 10px;
+  margin-top: 15px;
+}
+
+.slide-container p {
+    padding: 0 1rem;
+    color: var(--text-body);
 }
