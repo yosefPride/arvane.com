@@ -615,11 +615,16 @@ header .logo img {
     overflow: hidden;
 }
 
+@media (max-width: 600px) {
+    .carousel-container {
+        width: 100%;
+    }
+}
+
 .track {
     display: flex;
     width: max-content;
     animation: scroll 15s linear infinite;
-    /* will-change: transform; */
 }
 
 .carousel-container:hover .track {
@@ -628,11 +633,8 @@ header .logo img {
 
 .carousel-content {
     display: flex;
-    /* width: max-content; */
-    /* flex-direction: row; */
     gap: 2rem;
     padding: 2rem 1rem;
-    /* flex: 0 0 auto; */
 }
 
 .testimonial-box {
@@ -681,7 +683,6 @@ header .logo img {
     }
     to {
         transform: translateX(-50%);
-        /* transform: translateX(calc(-1 * var(--scroll-distance))); */
     }
 }
 /*end of testimonials section*/
