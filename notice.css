@@ -112,6 +112,7 @@ main.notice-page {
     color: var(--text-strong);
     font-size: clamp(3rem, 6vw, 5.8rem);
     line-height: 1.02;
+    overflow: hidden;
 }
 
 .notice-lead,
