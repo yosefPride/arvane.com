@@ -322,7 +322,7 @@ header .logo img {
     color: var(--text-strong);
 }
 
-.section-heading .eyebrow {
+.eyebrow {
     display: inline-block;
     margin-bottom: 0.75rem;
     color: var(--accent-gold-deep);
@@ -602,23 +602,19 @@ header .logo img {
     padding: 4rem 0;
 }
 
+.testimonials .section-heading {
+    margin-left: 5vw;
+}
+
 .testimonials h2 {
     color: var(--text-strong);
-    text-align: center;
     font-size: min(2rem, 40px);
-    margin-bottom: 2rem;
 }
 
 .carousel-container {
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
-}
-
-@media (max-width: 600px) {
-    .carousel-container {
-        width: 100%;
-    }
 }
 
 .track {
