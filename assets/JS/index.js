@@ -79,3 +79,84 @@ buttons.forEach(btn => {
         }
     });
 });
+
+// Gift Cards: Payment modal UI
+(() => {
+    const continueButton = document.getElementById('gift-continue');
+    const modal = document.getElementById('gift-payment-modal');
+    const amountSelect = document.getElementById('gift-amount');
+    const amountOutput = document.getElementById('gift-payment-amount');
+
+    if (!continueButton || !modal) {
+        return;
+    }
+
+    const closeTargets = modal.querySelectorAll('[data-gift-payment-close]');
+    const methodButtons = modal.querySelectorAll('[data-gift-method]');
+    const panels = modal.querySelectorAll('[data-gift-panel]');
+
+    const openModal = () => {
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('gift-payment-open');
+
+        if (amountSelect && amountOutput) {
+            const selected = amountSelect.value || amountSelect.options?.[amountSelect.selectedIndex]?.textContent;
+            if (selected) {
+                amountOutput.textContent = selected;
+            }
+        }
+
+        const focusTarget = modal.querySelector('.gift-payment-close');
+        if (focusTarget) {
+            focusTarget.focus();
+        }
+    };
+
+    const closeModal = () => {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('gift-payment-open');
+        continueButton.focus();
+    };
+
+    const setActiveMethod = (method) => {
+        methodButtons.forEach((button) => {
+            const isActive = button.getAttribute('data-gift-method') === method;
+            button.classList.toggle('is-active', isActive);
+            button.setAttribute('aria-selected', String(isActive));
+        });
+
+        panels.forEach((panel) => {
+            const isActive = panel.getAttribute('data-gift-panel') === method;
+            panel.classList.toggle('is-active', isActive);
+            panel.hidden = !isActive;
+        });
+    };
+
+    continueButton.addEventListener('click', openModal);
+
+    closeTargets.forEach((node) => {
+        node.addEventListener('click', closeModal);
+    });
+
+    methodButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const method = button.getAttribute('data-gift-method');
+            if (!method) {
+                return;
+            }
+            setActiveMethod(method);
+        });
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') {
+            return;
+        }
+        if (!modal.classList.contains('is-open')) {
+            return;
+        }
+        closeModal();
+    });
+})();

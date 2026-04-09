@@ -401,3 +401,239 @@ input, select, textarea {
     width: 100%;
     border-radius: 10px;
 }
+
+/* Gift card payment modal */
+body.gift-payment-open {
+    overflow: hidden;
+}
+
+.purchase-cta {
+    background-color: var(--eyebrow);
+    border: 1px solid var(--text-body);
+    color:  var(--secondary-color);
+    font-weight: bold;
+    padding: 0.85rem 1.6rem;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.purchase-cta:hover {
+    filter: brightness(0.98);
+    transform: translateY(-1px);
+}
+
+.gift-payment-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    place-items: center;
+    padding: 1.25rem;
+    z-index: 9999;
+}
+
+.gift-payment-modal.is-open {
+    display: grid;
+}
+
+.gift-payment-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 18, 15, 0.7);
+    backdrop-filter: blur(6px);
+}
+
+.gift-payment-dialog {
+    position: relative;
+    z-index: 2;
+    width: min(92vw, 44rem);
+    max-height: min(86vh, 46rem);
+    overflow: auto;
+    border-radius: 18px;
+    border: 1px solid rgba(245, 236, 227, 0.22);
+    background:
+        linear-gradient(180deg, rgba(255, 250, 244, 0.96), rgba(248, 240, 230, 0.9)),
+        radial-gradient(circle at 20% 0%, rgba(201, 162, 124, 0.18), transparent 55%);
+    box-shadow: 0 26px 70px rgba(0, 0, 0, 0.4);
+}
+
+.gift-payment-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.15rem 1.25rem;
+    background: rgba(255, 250, 244, 0.92);
+    border-bottom: 1px solid rgba(107, 77, 58, 0.12);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+}
+
+.gift-payment-header h2 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 1.2rem;
+}
+
+.gift-payment-close {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(107, 77, 58, 0.18);
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    color: var(--text-strong);
+}
+
+.gift-payment-summary {
+    padding: 1.1rem 1.25rem 0;
+}
+
+.gift-payment-line {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-strong);
+    font-weight: 700;
+}
+
+.gift-payment-note {
+    margin: 0.3rem 0 0;
+    color: var(--text-body);
+    font-size: 0.92rem;
+}
+
+.gift-payment-methods {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+}
+
+.gift-payment-method {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.85rem 0.8rem;
+    border-radius: 14px;
+    border: 1px solid rgba(107, 77, 58, 0.18);
+    background: rgba(255, 255, 255, 0.55);
+    color: var(--text-strong);
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.15s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.gift-payment-method.is-active {
+    border-color: rgba(166, 124, 82, 0.7);
+    background: rgba(201, 162, 124, 0.22);
+}
+
+.gift-payment-method:hover {
+    transform: translateY(-1px);
+}
+
+.gift-payment-panels {
+    padding: 0 1.25rem 1.25rem;
+}
+
+.gift-payment-panel {
+    border-radius: 16px;
+    border: 1px solid rgba(107, 77, 58, 0.12);
+    background: rgba(255, 255, 255, 0.4);
+    padding: 1rem;
+}
+
+.gift-payment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.gift-payment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.gift-payment-field--full {
+    grid-column: 1 / -1;
+}
+
+.gift-payment-placeholder {
+    display: grid;
+    gap: 0.85rem;
+    justify-items: start;
+    color: var(--text-body);
+}
+
+.gift-payment-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: 999px;
+    padding: 0.75rem 1.05rem;
+    border: 1px solid rgba(107, 77, 58, 0.18);
+    background: rgba(201, 162, 124, 0.2);
+    color: var(--text-strong);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gift-payment-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    padding: 0 1.25rem 1.25rem;
+}
+
+.gift-payment-secondary {
+    border-radius: 12px;
+    padding: 0.8rem 1.1rem;
+    border: 1px solid rgba(107, 77, 58, 0.22);
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--text-strong);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.gift-payment-primary {
+    border-radius: 12px;
+    padding: 0.85rem 1.2rem;
+    background: var(--bg-dark);
+    color: var(--text-inverse);
+    text-decoration: none;
+    font-weight: 800;
+    border: 1px solid rgba(245, 236, 227, 0.12);
+}
+
+@media (max-width: 640px) {
+    .gift-payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .gift-payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gift-payment-actions {
+        justify-content: stretch;
+    }
+
+    .gift-payment-primary,
+    .gift-payment-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}

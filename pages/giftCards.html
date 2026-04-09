@@ -142,12 +142,97 @@
 	        </div>
 
 	        <div class="purchase-actions">
-	          <a href="notice.html" class="purchase-cta"><button>Continue</button></a>
+            <button type="button" class="purchase-cta" id="gift-continue">Continue</button>
 	        </div>
 	      </div>
 	    </div>
 	  </section>
 	  </main>
+
+    <!-- Gift card payment modal -->
+    <div class="gift-payment-modal" id="gift-payment-modal" aria-hidden="true">
+      <div class="gift-payment-backdrop" data-gift-payment-close></div>
+
+      <div class="gift-payment-dialog" role="dialog" aria-modal="true" aria-labelledby="gift-payment-title">
+        <div class="gift-payment-header">
+          <h2 id="gift-payment-title">Payment</h2>
+          <button type="button" class="gift-payment-close" aria-label="Close payment modal" data-gift-payment-close>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="gift-payment-summary">
+          <p class="gift-payment-line">
+            <span>Gift Card</span>
+            <span id="gift-payment-amount">$25</span>
+          </p>
+          <p class="gift-payment-note">This is a visual demo only — no real payment processing yet.</p>
+        </div>
+
+        <div class="gift-payment-methods" role="tablist" aria-label="Payment methods">
+          <button type="button" class="gift-payment-method is-active" data-gift-method="card" role="tab" aria-selected="true">
+            <i class="fa-regular fa-credit-card"></i>
+            <span>Card</span>
+          </button>
+          <button type="button" class="gift-payment-method" data-gift-method="applepay" role="tab" aria-selected="false">
+            <i class="fa-brands fa-apple"></i>
+            <span>Apple Pay</span>
+          </button>
+          <button type="button" class="gift-payment-method" data-gift-method="paypal" role="tab" aria-selected="false">
+            <i class="fa-brands fa-paypal"></i>
+            <span>PayPal</span>
+          </button>
+        </div>
+
+        <div class="gift-payment-panels">
+          <div class="gift-payment-panel is-active" data-gift-panel="card" role="tabpanel">
+            <div class="gift-payment-grid">
+              <div class="gift-payment-field gift-payment-field--full">
+                <label for="gift-card-number">Card Number</label>
+                <input id="gift-card-number" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456">
+              </div>
+              <div class="gift-payment-field">
+                <label for="gift-card-exp">Expiry</label>
+                <input id="gift-card-exp" type="text" inputmode="numeric" placeholder="MM/YY">
+              </div>
+              <div class="gift-payment-field">
+                <label for="gift-card-cvc">CVC</label>
+                <input id="gift-card-cvc" type="text" inputmode="numeric" placeholder="123">
+              </div>
+              <div class="gift-payment-field gift-payment-field--full">
+                <label for="gift-card-name">Name on Card</label>
+                <input id="gift-card-name" type="text" placeholder="Full name">
+              </div>
+            </div>
+          </div>
+
+          <div class="gift-payment-panel" data-gift-panel="applepay" role="tabpanel" hidden>
+            <div class="gift-payment-placeholder">
+              <p>Apple Pay would be shown here.</p>
+              <button type="button" class="gift-payment-pill">
+                <i class="fa-brands fa-apple"></i>
+                Pay with Apple Pay
+              </button>
+            </div>
+          </div>
+
+          <div class="gift-payment-panel" data-gift-panel="paypal" role="tabpanel" hidden>
+            <div class="gift-payment-placeholder">
+              <p>PayPal checkout would be shown here.</p>
+              <button type="button" class="gift-payment-pill">
+                <i class="fa-brands fa-paypal"></i>
+                Continue to PayPal
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gift-payment-actions">
+          <button type="button" class="gift-payment-secondary" data-gift-payment-close>Back</button>
+          <a class="gift-payment-primary" href="notice.html">Continue</a>
+        </div>
+      </div>
+    </div>
 
   <footer>
       <div class="bottom-SEO">
