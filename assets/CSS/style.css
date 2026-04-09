@@ -264,7 +264,7 @@ header .logo img {
 }
 
 .hero-btn {
-    padding-top: clamp(100px, 1vw, 20px);
+    padding-top: clamp(50px, 1vw, 20px);
     overflow: visible;
 }
 

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arvane | Gift Cards</title>
+  <link rel="icon" href="../assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="../assets/CSS/style.css">
+  <link rel="stylesheet" href="../assets/CSS/giftCards.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+  <script src="../assets/JS/index.js" defer></script>
+</head>
+<body>
+
+  <header>
+      <div class="logo">
+          <a href="../index.html">
+              <img src="../assets/images/logo.png" alt="logo">
+          </a>
+      </div>
+
+      <button class="ham-menu" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+
+      <nav class="off-screen-menu" id="site-navigation">
+          <a href="menu.html">Menu</a>
+          <a href="locations.html">Locations</a>
+          <a href="reserveTable.html">Reserve Table</a>
+          <a href="contactUs.html">Contact Us</a>
+      </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="gifts-hero">
+      <img src="../assets/images/gift-card-hero.jpg" alt="">
+      <div class="gifts-overlay">
+        <div class="gifts-hero-copy">
+          <p class="gifts-eyebrow">GIFT CARDS</p>
+          <h1 class="section-title">Give an Experience</h1>
+          <p class="gifts-intro">Elegant gift cards for meaningful moments.</p>
+          <div class="gifts-cta">
+            <a href="#purchase"><button>Order Gift Card</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE PROPS -->
+	    <section class="gifts-highlights">
+	      <div class="highlight-pill">
+	          <span>Instant Delivery</span>
+	          <span>
+	            <i class="fas fa-shipping-fast"></i>
+          </span>
+      </div>
+      <div class="highlight-pill">
+          <span>No Expiration</span>
+          <span>
+            <i class="fas fa-hourglass-end"></i>
+          </span>
+      </div>
+      <div class="highlight-pill">
+          <span>All Locations</span>
+          <span>
+            <i class="fas fa-location-dot"></i>
+          </span>
+      </div>
+      <div class="highlight-pill">
+          <span>Digital & Physical</span>
+          <span>
+            <i class="fas fa-file-download"></i>
+          </span>
+	      </div>
+	    </section>
+
+	    <!-- ALREADY HAVE A CARD -->
+	    <section class="gifts-existing">
+	      <div class="container">
+	        <div class="existing-card">
+	          <h2 class="existing-title">Already have a gift card?</h2>
+	          <p class="existing-subtitle">Check your balance, find a location, or view terms.</p>
+	          <div class="existing-ctas">
+	            <a href="notice.html" class="existing-cta"><button type="button">Check Balance</button></a>
+	            <a href="locations.html" class="existing-cta"><button type="button">Find a Location</button></a>
+	            <a href="notice.html" class="existing-cta"><button type="button">View Terms</button></a>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+
+	    <!-- PURCHASE -->
+		  <section id="purchase">
+		    <div class="container">
+          <h2 class="big-screens-only">Order Gift Card</h2>
+		      <div class="form-card purchase-form">
+	        <div class="purchase-field">
+	          <label for="gift-amount">Amount</label>
+	          <select id="gift-amount" name="amount">
+	            <option>$25</option>
+	            <option>$50</option>
+	            <option>$100</option>
+	            <option>Custom</option>
+	          </select>
+	        </div>
+
+	        <div class="purchase-field">
+	          <label for="gift-type">Type</label>
+	          <select id="gift-type" name="type">
+	            <option>Digital</option>
+	            <option>Physical</option>
+	          </select>
+	        </div>
+
+	        <div class="purchase-field">
+	          <label for="gift-recipient-name">Recipient Name</label>
+	          <input id="gift-recipient-name" name="recipientName" type="text" autocomplete="name">
+	        </div>
+
+	        <div class="purchase-field">
+	          <label for="gift-recipient-email">Recipient Email</label>
+	          <input id="gift-recipient-email" name="recipientEmail" type="email" autocomplete="email">
+	        </div>
+
+	        <div class="purchase-field purchase-field--full">
+	          <label for="gift-message">Message</label>
+	          <textarea id="gift-message" name="message" rows="3"></textarea>
+	        </div>
+
+	        <div class="purchase-field">
+	          <label for="gift-sender-name">Sender Name</label>
+	          <input id="gift-sender-name" name="senderName" type="text" autocomplete="name">
+	        </div>
+
+	        <div class="purchase-field">
+	          <label for="gift-sender-email">Sender Email</label>
+	          <input id="gift-sender-email" name="senderEmail" type="email" autocomplete="email">
+	        </div>
+
+	        <div class="purchase-actions">
+	          <a href="notice.html" class="purchase-cta"><button>Continue</button></a>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	  </main>
+
+  <footer>
+      <div class="bottom-SEO">
+            <div class="footer-logo">
+                <a href="../index.html"><img src="../assets/images/logo.png" alt="logo" height="80px"></a>
+            </div>
+            <div class="footer-container">
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="giftCards.html" class="nav-link">Gift Cards</a>
+                <a href="reserveTable.html" class="nav-link">Reserve Table</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+            </div>
+            <div class="footer-container">
+                <a href="notice.html" class="nav-link">Deliveries</a>
+                <a href="notice.html" class="nav-link">Events</a>
+                <a href="notice.html" class="nav-link">Membership</a>
+                <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+            </div>
+            <div class="footer-container">
+                <a href="notice.html" class="nav-link">Refund Policy</a>
+                <a href="notice.html" class="nav-link">Site Map</a>
+                <a href="notice.html" class="nav-link">Accessibility</a>
+                <a href="notice.html" class="nav-link">Terms & Privacy</a>
+            </div>
+            <div class="footer-container">
+                <a href="joinTeam.html" class="nav-link">Join Our Team</a>
+                <a href="contactUs.html" class="nav-link">Contact us</a>
+                 <!--whatsapp--> 
+                <a href="https://wa.me/972507331829?text=Hi%20I%20would%20like%20to%20order%20a%20coffee" target="_blank" class="whatsapp-icon">
+                    <span>Customer Service</span>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <!-- <a class="nav-link">Follow us:</a> -->
+
+                <div class="follow-icons">
+                    <a href="https://facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://tiktok.com/" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+      <span class="footer-separator"></span>
+      <p>&copy; 2026 Arvane | Crafted With Passion</p>
+  </footer>
+
+</body>
+</html>

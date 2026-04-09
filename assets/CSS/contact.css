@@ -346,6 +346,10 @@
 }
 
 @media (max-width: 900px) {
+    .contact-hero {
+        margin: 0;
+    }
+
     .contact-wrapper,
     .form-row {
         grid-template-columns: 1fr;

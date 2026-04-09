@@ -22,11 +22,9 @@ main.notice-page {
     min-height: clamp(34rem, 70vh, 44rem);
     padding: clamp(2.75rem, 6vw, 4.5rem);
     border: 1px solid rgba(107, 77, 58, 0.12);
-    /* border-radius: 2rem; */
     background:
         linear-gradient(180deg, rgba(255, 250, 244, 0.88), rgba(248, 240, 230, 0.78)),
         linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-    /* box-shadow: 0 24px 60px rgba(45, 28, 20, 0.14); */
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     overflow: hidden;

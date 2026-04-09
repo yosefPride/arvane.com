@@ -1,0 +1,403 @@
+:root {
+    --primary-color: #241814;
+    --secondary-color: #3a2720;
+    --accent-color: #d6b48f;
+    --bg-dark: #1a120f;
+    --bg-dark-soft: #261a16;
+    --bg-light: #faf6f0;
+    --bg-light-warm: #f2e8dc;
+    --bg-light-soft: #efe4d6;
+    --surface-light: #fffaf4;
+    --surface-mid: #f5ede3;
+    --text-strong: #2c1d17;
+    --text-body: #6f584a;
+    --text-inverse: #f5ece3;
+    --text-inverse-soft: #f5ece3d1;
+    --accent-gold: #c9a27c;
+    --accent-gold-deep: #a97d58;
+    --border-soft: #78594524;
+    --eyebrow: #efd2b1;
+    --accent: #a67c52;       
+    --border: #3a2b22;        
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-light-warm);
+}
+
+main {
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--text-body);
+}
+
+.section-title {
+    margin: 0;
+    max-width: 14ch;
+    color: #fffaf4;
+    line-height: 1.02;
+    text-align: left;
+    text-wrap: balance;
+}
+
+.gifts-hero {
+    display: grid;
+    width: 100%;
+    min-height: 25rem;
+    max-height: 32rem;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+}
+
+.gifts-hero h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2.4rem, 7vw, 4.8rem);
+    overflow: hidden;
+}
+
+.gifts-hero > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gifts-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    background: linear-gradient(rgba(41, 39, 38, 0.75), rgba(34, 27, 24, 0.9));
+    z-index: 1;
+}
+
+.gifts-hero-copy {
+    border: 1px solid rgba(103, 71, 53, 0.12);
+    box-shadow: 0 22px 60px rgba(67, 42, 29, 0.08);
+    display: grid;
+    gap: clamp(0.75rem, 1.4vw, 1rem);
+    align-content: end;
+    width: min(100%, 52rem);
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+    backdrop-filter: none;
+}
+
+.gifts-eyebrow {
+    margin: 0;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: clamp(0.72rem, 1.4vw, 0.8rem);
+    font-weight: 700;
+    color: #f3d4af;
+}
+
+.gifts-intro {
+    max-width: 42rem;
+    margin: 0;
+    color: rgba(255, 246, 237, 0.92);
+    font-size: clamp(0.95rem, 1.8vw, 1.02rem);
+    line-height: 1.55;
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.gifts-cta {
+    padding-top: clamp(10px, 1vw, 20px);
+    overflow: visible;
+}
+
+.gifts-cta a {
+    display: inline-block;
+    overflow: visible;
+    text-decoration: none;
+}
+
+.gifts-cta button{
+    display: block;
+    font-size: clamp(16px, 2vw, 25px);
+    font-weight: bold;
+    padding: 0.85rem 1.6rem;
+    background: rgba(201, 162, 124, 0.18);
+    border: 1px solid rgba(245, 236, 227, 0.9);
+    color: white;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.gifts-cta button:hover{
+    transform: translateY(-3px);
+    background: rgba(201, 162, 124, 0.28);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.24);
+}
+
+.gifts-highlights {
+    background-color: var(--bg-dark-soft);
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: clamp(0.75rem, 2vw, 1rem);
+    padding: 2rem 0;
+}
+
+.highlight-pill {
+    min-width: auto;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 999px;
+    background: rgba(255, 248, 240, 0.12);
+    border: 1px solid rgba(255, 232, 207, 0.22);
+    /* border: 1px solid #a67c52; */
+    box-shadow: none;
+    backdrop-filter: blur(2px);
+    /* color: #a67c52; */
+    color: rgba(255, 243, 229, 0.76);
+}
+
+.gifts-existing {
+    background-color: var(--bg-dark-soft);
+    padding: clamp(2rem, 5vw, 3.25rem) 0;
+}
+
+.gifts-existing .container {
+    padding: 0 clamp(1rem, 3vw, 1.5rem);
+}
+
+.existing-card {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    gap: 1rem;
+    padding: clamp(1.25rem, 3vw, 1.75rem);
+    border-radius: 18px;
+    background: rgba(255, 248, 240, 0.06);
+    backdrop-filter: blur(2px);
+}
+
+.existing-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(166, 124, 82, 0.55);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.existing-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.existing-title {
+    margin: 0;
+    color: var(--text-inverse);
+    letter-spacing: 0.02em;
+}
+
+.existing-subtitle {
+    margin: 0;
+    color: var(--text-inverse-soft);
+}
+
+.existing-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    justify-content: flex-start;
+    padding-top: .5rem;
+}
+
+.existing-cta {
+    text-decoration: none;
+    overflow: visible;
+}
+
+.existing-cta button {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    background: rgba(201, 162, 124, 0.18);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px rgba(245, 236, 227, 0.9);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.existing-cta button:hover {
+    transform: translateY(-3px);
+    background: rgba(201, 162, 124, 0.28);
+    box-shadow:
+        inset 0 0 0 1px rgba(245, 236, 227, 0.9),
+        0 12px 24px rgba(0,0,0,0.24);
+}
+
+@media (max-width: 640px) {
+    .existing-ctas {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .existing-cta button {
+        width: 100%;
+    }
+}
+
+#purchase {
+    padding: clamp(2rem, 4rem, 5rem) 0;
+    display: grid;
+    place-items: center;
+}
+
+#purchase .purchase-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    min-height: auto;
+}
+
+#purchase .purchase-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    min-width: 0;
+}
+
+#purchase .purchase-field--full,
+#purchase .purchase-actions {
+    grid-column: 1 / -1;
+}
+
+#purchase .purchase-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.25rem;
+}
+
+@media (max-width: 640px) {
+    #purchase .purchase-form {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 1.25rem;
+    }
+
+    #purchase .purchase-actions {
+        justify-content: stretch;
+    }
+
+    #purchase .purchase-actions .purchase-cta button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .purchase-form,
+    .purchase-hero {
+        width: 100%;
+    }
+    .purchase-content {
+        border-radius: 0%;
+    }
+    .big-screens-only {
+        text-align: center;
+    }
+}
+
+.container {
+    width: min(100%, 72rem);
+    margin: auto;
+}
+
+section {
+    border-bottom: 1px solid var(--border);
+}
+
+.form-card {
+    position: relative;
+    display: grid;
+    gap: 1.2rem;
+    min-height: clamp(34rem, 70vh, 44rem);
+    padding: 2rem clamp(2.75rem, 6vw, 4.5rem);
+    border: 1px solid rgba(107, 77, 58, 0.12);
+    background:
+        linear-gradient(180deg, rgba(255, 250, 244, 0.88), rgba(248, 240, 230, 0.78)),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    overflow: hidden;
+    box-shadow: 0 18px 32px rgba(12, 8, 6, 0.18);
+}
+
+.form-card::before,
+.form-card::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.form-card::before {
+    width: 18rem;
+    height: 18rem;
+    top: -6rem;
+    right: -5rem;
+    background: radial-gradient(circle, rgba(201, 162, 124, 0.22), rgba(201, 162, 124, 0));
+}
+
+.form-card::after {
+     width: 15rem;
+    height: 15rem;
+    bottom: -5rem;
+    left: -4rem;
+    background: radial-gradient(circle, rgba(92, 62, 48, 0.12), rgba(92, 62, 48, 0));
+}
+
+label {
+    font-size: 13px;
+    color: var(--text-body);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-body);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.purchase-cta button{
+    background-color: var(--eyebrow);
+    border: 1px solid var(--text-body);
+    color:  var(--secondary-color);
+    font-size: clamp(16px, 2vw, 25px);
+    font-weight: bold;
+    padding: 0.85rem 1.6rem;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    border-radius: 10px;
+}
