@@ -35,6 +35,10 @@ body.menu-open {
     overflow: hidden;
 }
 
+h2 {
+    overflow: hidden;
+}
+
 .content-container {
     width: min(100%, 72rem);
     margin: 0 auto;

@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #241814;
+    --secondary-color: #3a2720;
+    --accent-color: #d6b48f;
+    --bg-dark: #1a120f;
+    --bg-dark-soft: #261a16;
+    --bg-light: #faf6f0;
+    --bg-light-warm: #f2e8dc;
+    --bg-light-soft: #efe4d6;
+    --surface-light: #fffaf4;
+    --surface-mid: #f5ede3;
+    --text-strong: #2c1d17;
+    --text-body: #6f584a;
+    --text-inverse: #f5ece3;
+    --text-inverse-soft: rgba(245, 236, 227, 0.82);
+    --accent-gold: #c9a27c;
+    --accent-gold-deep: #a97d58;
+    --border-soft: rgba(120, 89, 69, 0.14);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg-light);
+    color: var(--text-body);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+.title {
+    background: var(--bg-dark);
+    color: var(--text-inverse);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.title h2 {
+    margin-top: 10px;
+    color: var(--text-inverse-soft);
+}
+
+section {
+    background: var(--surface-light);
+    border: 1px solid var(--border-soft);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+section h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.notice {
+    background: var(--bg-light-warm);
+    border-left: 4px solid var(--accent-gold);
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    color: var(--text-strong);
+}
