@@ -39,22 +39,20 @@ body {
 
 
 .title {
-    background: var(--bg-dark);
-    color: var(--text-inverse);
-    padding: 60px 20px;
+    /* background: var(--bg-dark); */
+    color: var(--text-strong);
     text-align: center;
 }
 
 .title h2 {
     margin-top: 10px;
-    color: var(--text-inverse-soft);
 }
 
 section {
     background: var(--surface-light);
     border: 1px solid var(--border-soft);
-    padding: 30px;
-    margin-bottom: 30px;
+    padding: 1rem;
+    margin-bottom: 2rem;
     border-radius: 10px;
 }
 
