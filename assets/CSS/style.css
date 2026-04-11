@@ -998,8 +998,7 @@ footer .bottom-SEO {
 footer .footer-container {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 1rem;
 }
 
 footer .footer-container .nav-link {
@@ -1040,4 +1039,10 @@ footer p {
     width: 100%;
     text-align: center;
     padding: 20px;
+}
+
+@media (min-width: 960px) {
+    footer .footer-container {
+        padding: 0 3rem;
+    }
 }

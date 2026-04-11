@@ -39,7 +39,6 @@ body {
 
 
 .title {
-    /* background: var(--bg-dark); */
     color: var(--text-strong);
     text-align: center;
 }
