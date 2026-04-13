@@ -40,7 +40,7 @@ section {
 }
 
 main {
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     padding: 3rem 1.5rem;
     /* border-left: 1px solid var(--border);
@@ -50,27 +50,31 @@ main {
 img {
     width: 100%;
     object-fit: contain;
+    /* aspect-ratio: 4/3; */
 }
 
 h2 {
     color: var(--text-strong);
+    font-size: 2rem;
 }
 
 p {
     text-align: justify;
     padding-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
 .btn {
     color: var(--accent-gold);
     text-decoration: none;
-    padding: .5rem 1rem;
+    padding: .3rem 1rem;
     border-radius: 999px;
     border: 2px solid var(--accent-gold);
+    font-weight: 700;
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-deep));
-    color: var(--bg-light);
+    background: #c9a27c3b;
+    color: #b9824b;
 }
 
