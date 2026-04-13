@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arvane | Events</title>
+    <title>Memberships | Arvane</title>
     <link rel="icon" href="../assets/images/logo.png" type="image/png">
     <link rel="stylesheet" href="../assets/CSS/style.css">
-    <link rel="stylesheet" href="../assets/CSS/events.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <link rel="stylesheet" href="../assets/CSS/memberships.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--socials-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="../assets/JS/index.js" defer></script>
 </head>
@@ -35,117 +35,125 @@
     </header>
 
     <main>
-        <!-- HERO (reuse your exact hero structure) -->
-        <section class="events-hero">
-            <img src="../assets/images/events-hero.jpg" alt="people dining">
+        <!-- HERO -->
+        <section class="memberships-hero">
+            <img src="../assets/images/" alt="">
             <div class="overlay">
                 <div class="hero-overlay-text">
-                    <p class="eyebrow">events</p>
-                    <h1>Events at Arvane</h1>
-                    <h3>Live music, curated gatherings, and thoughtful experiences.</h3>
+                    <p class="eyebrow">membership</p>
+                    <h1>Arvane Membership</h1>
+                    <h3>
+                        Join Arvane Membership to earn rewards, unlock exclusive perks,
+                        and enhance every visit with thoughtful benefits.
+                    </h3>
                 </div>
             </div>
         </section>
 
-        <!-- FEATURED EVENT -->
-        <section class="events-featured">
-            <div class="events-featured-inner content-container">
+        <!-- BENEFITS GRID -->
+        <section class="membership-benefits-section">
+            <div class="content-container">
+
                 <div class="section-heading">
-                    <span class="eyebrow">Featured Event</span>
-                    <h2>This Week at Arvane</h2>
-                    <p>A highlight from our current event lineup.</p>
+                    <span class="eyebrow">Benefits</span>
+                    <h2>What You Get</h2>
+                    <p>Simple, consistent rewards built around your everyday routine.</p>
                 </div>
 
-                <div class="featured-event-card">
-                    <img src="../assets/images/jazz.jpg" alt="Live jazz performance">
-                    <div class="event-copy">
-                        <h3>Live Jazz Evening</h3>
-                        <p class="date">Friday · 8:00 PM</p>
-                        <p>An intimate evening of live jazz performances featuring local artists.</p>
-                        <button class="primary-btn">Reserve a Spot</button>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Earn Points</h3>
+                        <p>Collect points on every purchase and redeem them for drinks and food.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h3>Member Offers</h3>
+                        <p>Access exclusive promotions available only to members.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h3>Birthday Reward</h3>
+                        <p>Enjoy a complimentary treat during your birthday month.</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <h3>Early Access</h3>
+                        <p>Be first to try seasonal drinks and limited releases.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- UPCOMING EVENTS -->
-        <section class="events-upcoming">
-            <div class="events-upcoming-inner content-container">
+        <!-- TIERS -->
+        <section class="membership-tiers">
+            <div class="content-container">
+
                 <div class="section-heading">
-                    <span class="eyebrow">Upcoming</span>
-                    <h2>What’s Happening Next</h2>
-                    <p>Explore our upcoming events and reserve your place.</p>
+                    <span class="eyebrow">Tiers</span>
+                    <h2>Choose Your Level</h2>
+                    <p>Flexible membership options based on how often you visit.</p>
                 </div>
 
-                <div class="events-grid">
-                    <article class="event-card">
-                        <img src="../assets/images/open-mic.jpg" alt="Open mic event">
-                        <div class="event-copy">
-                            <h3>Open Mic Evening</h3>
-                            <p class="date">Saturday · 7:00 PM</p>
-                            <p>An open platform for emerging talent and community performers.</p>
-                        </div>
-                    </article>
+                <div class="tiers-grid">
 
-                    <article class="event-card">
-                        <img src="../assets/images/coffee-workshop.jpg" alt="Coffee workshop">
-                        <div class="event-copy">
-                            <h3>Coffee Brewing Workshop</h3>
-                            <p class="date">Monday · 5:00 PM</p>
-                            <p>A guided session on professional brewing techniques.</p>
-                        </div>
-                    </article>
+                    <div class="tier-card">
+                        <h3>Member</h3>
+                        <p class="price">Free</p>
+                        <ul>
+                            <li>Earn points on purchases</li>
+                            <li>Standard rewards access</li>
+                            <li>Birthday reward</li>
+                        </ul>
+                        <button class="secondary-btn">Join Free</button>
+                    </div>
+
+                    <div class="tier-card highlighted">
+                        <span class="badge">Most Popular</span>
+                        <h3>Regular</h3>
+                        <p class="price">$4.99 / month</p>
+                        <ul>
+                            <li>2× points on all orders</li>
+                            <li>Monthly exclusive offers</li>
+                            <li>Priority seasonal access</li>
+                        </ul>
+                        <button class="primary-btn">Upgrade</button>
+                    </div>
+
+                    <div class="tier-card">
+                        <h3>Founders</h3>
+                        <p class="price">$9.99 / month</p>
+                        <ul>
+                            <li>3× points on all orders</li>
+                            <li>Free monthly drink</li>
+                            <li>Early access + priority seating</li>
+                        </ul>
+                        <button class="secondary-btn">Join Founders</button>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- WEEKLY EVENTS -->
-        <section class="events-recurring">
-            <div class="events-recurring-inner content-container">
-                <div class="section-heading">
-                    <span class="eyebrow">Weekly Schedule</span>
-                    <h2>Recurring Experiences</h2>
-                    <p>Consistent weekly gatherings designed to build community and routine.</p>
-                </div>
-
-                <div class="recurring-grid">
-                    <div class="recurring-item">
-                        <h3>Board Game Social</h3>
-                        <p>Sunday · 6:00 PM</p>
-                    </div>
-
-                    <div class="recurring-item">
-                        <h3>Poetry & Spoken Word Evening</h3>
-                        <p>Wednesday · 7:30 PM</p>
-                    </div>
-
-                    <div class="recurring-item">
-                        <h3>Live Acoustic Music Session</h3>
-                        <p>Friday · 8:00 PM</p>
-                    </div>
-                </div>
+        <!-- CTA -->
+        <section class="membership-cta">
+            <div class="content-container">
+                <h2>Start Earning From Your Next Visit</h2>
+                <p>Join in under a minute and begin collecting rewards immediately.</p>
+                <button class="primary-btn">Join Membership</button>
             </div>
         </section>
-
-        <!-- CTA (reuse membership style thinking) -->
-        <section class="events-cta">
-            <div class="events-cta-inner content-container">
-                <h2>Host an Event at Arvane</h2>
-                <p>Partner with us to create a curated experience in a refined café setting.</p>
-                <a href="contact.html" class="membership-btn primary-btn">Get in Touch</a>
-            </div>
-        </section>
-
     </main>
 
     <footer>
         <div class="footer-inner">
+            <!-- Logo -->
             <div class="footer-logo">
                 <a href="../index.html">
                     <img src="../assets/images/logo.png" alt="Arvane logo">
                 </a>
             </div>
 
+            <!-- Links -->
             <div class="footer-grid">
                 <div class="footer-column">
                     <h4>Explore</h4>
@@ -201,5 +209,6 @@
         </div>
     </footer>
 
+
 </body>
-</html> 
+</html>

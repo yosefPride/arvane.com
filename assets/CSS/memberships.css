@@ -1,0 +1,140 @@
+.memberships-hero {
+    display: grid;
+    width: 100%;
+    min-height: 25rem;
+    max-height: 32rem;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+}
+
+.memberships-hero h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2.4rem, 7vw, 4.8rem);
+    text-wrap: balance;
+    overflow: hidden;
+}
+
+.memberships-hero > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BENEFITS */
+.membership-benefits-section {
+    background: var(--bg-light-soft);
+    padding: clamp(4rem, 8vw, 6rem) 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.benefit-card {
+    background: linear-gradient(180deg, var(--surface-light), var(--surface-mid));
+    border: 1px solid var(--border-soft);
+    border-radius: 1.2rem;
+    padding: 1.4rem;
+    box-shadow: 0 10px 24px rgba(71, 45, 30, 0.08);
+}
+
+.benefit-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-strong);
+}
+
+.benefit-card p {
+    color: var(--text-body);
+    line-height: 1.6;
+}
+
+/* TIERS */
+.membership-tiers {
+    background: linear-gradient(180deg, #221713, #18110f);
+    color: var(--text-inverse);
+    padding: clamp(4rem, 8vw, 6rem) 0;
+}
+
+.tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.tier-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 1.4rem;
+    padding: 1.6rem;
+    position: relative;
+}
+
+.tier-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: var(--accent-gold);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.tier-card ul {
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.tier-card li {
+    color: rgba(245, 236, 227, 0.85);
+    padding-left: 1rem;
+    position: relative;
+}
+
+.tier-card li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-gold);
+}
+
+.highlighted {
+    border: 1px solid rgba(214, 180, 143, 0.5);
+    transform: translateY(-6px);
+}
+
+.badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-gold);
+    color: #1f1410;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+/* CTA */
+.membership-cta {
+    background: linear-gradient(180deg, var(--bg-light), var(--bg-light-warm));
+    text-align: center;
+    padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.membership-cta h2 {
+    margin-bottom: 0.6rem;
+}
+
+.membership-cta p {
+    margin-bottom: 1.2rem;
+    color: var(--text-body);
+}
