@@ -32,6 +32,7 @@
     font-weight: 700;
     transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease, color 0.22s ease;
     border: none;
+    box-shadow: none;
 }
 
 /* EVENTS FEATURED */
@@ -47,7 +48,8 @@
     border: 1px solid var(--border-soft);
     border-radius: 1.4rem;
     overflow: hidden;
-    box-shadow: 0 12px 30px rgba(71, 45, 30, 0.1);
+    box-shadow: 0 1px 25px rgba(71, 45, 30, 0.1);
+    margin: 1rem 1rem;
 }
 
 .featured-event-card img {
@@ -63,6 +65,10 @@
 .event-copy h3 {
     color: var(--text-strong);
     margin-bottom: 0.4rem;
+}
+
+.event-copy button {
+    margin-top: 10px;
 }
 
 .event-copy .date {
@@ -81,6 +87,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
+    padding: 1rem 0;
 }
 
 .event-card {
