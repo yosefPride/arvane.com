@@ -55,13 +55,13 @@ img {
 
 h2 {
     color: var(--text-strong);
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 p {
     text-align: justify;
     padding-bottom: 1rem;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
 }
 
 .btn {
