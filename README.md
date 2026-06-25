@@ -1,8 +1,18 @@
-# Arvane.com
-A demo website for a cafe chain. Still in progress.
+# Arvane
 
-## How To Use
-Visit site at (https://yosefpride.github.io/arvane.com/)
+A static demo website for a modern cafe chain.
 
-### Still In Progress
-![Loading](https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif)
+Live site: https://yosefpride.github.io/arvane.com/
+
+## Features
+
+- Responsive navigation with a mobile menu
+- Home page with video hero, featured products, and testimonials
+- Menu page with category switching
+- Locations, table reservation, contact, events, membership, gift card, and careers pages
+- Gift card purchase demo with a payment modal
+- Shared footer with quick links, social links, and WhatsApp ordering
+
+## Run Locally
+
+Open `index.html` in a browser.
